@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff8;
+  color: #a1254a;
+}
+
+li{
+    color: black;
+}
+
+li b,i{
+    /* Asignacion descendente */
+    color: blue;
+}
+
+/* 
+li.primerItem{
+    color: blue;
+}
+ */
+/* h1.Titulo {
+  asignacion por clase
+  color: blue;
+}
+
+h1.subtitulo {
+  asignacion por clase
+  color: black;
+}
+
+p#texto {
+asignacion por id
+  color: red;
+}
+ */

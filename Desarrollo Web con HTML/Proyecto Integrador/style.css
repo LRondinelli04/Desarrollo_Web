@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: yellow;
+}
+
+header {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style-type: none; /*eliminar los puntos del listado*/
+  display: flex; /*poner el listado en horizontal*/
+}
+
+header a.servicios {
+  width: 134.79px;
+  height: 33.95px;
+  top: 77.74px;
+  left: 980.03px;
+}
+
+header a.contacto {
+  width: 136.09px;
+  height: 33.95px;
+  top: 77.74px;
+  left: 1210.84px;
+}
+
+header a.login {
+  width: 81.65px;
+  height: 33.95px;
+  top: 77.74px;
+  left: 1433.75px;
+}
+
+div.titulo {
+  width: 610.33px;
+  height: 197.16px;
+  top: 218.89px;
+  left: 138.19px;
+}
+
+div.titulo h1.somos {
+  width: 194.41px;
+  height: 67.9px;
+  top: 218.89px;
+  left: 138.19px;
+  font-family: Inter;
+  font-weight: 400;
+  size: 48px;
+  line-height: 58.09px;
+}
+
+div.titulo h1.wwwapas {
+  width: 584.54px;
+  height: 113.56px;
+  top: 248.09px;
+  left: 135.6px;
+  font-family: Coiny;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 97px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h2 {
+  width: 594.91px;
+  height: 28.1px;
+  top: 387.95px;
+  left: 153.61px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+p.introduccion {
+  width: 492px;
+  height: 135px;
+  top: 485px;
+  left: 139px;
+}
+
+div.informacionPersonal {
+  width: 553px;
+  height: 240px;
+  top: 808px;
+  left: 147px;
+}
+
+div.informacionPersonal h3 {
+  width: 338px;
+  height: 37px;
+  top: 808px;
+  left: 148px;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.informacionPersonal p {
+  width: 553px;
+  height: 192px;
+  top: 856px;
+  left: 147px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.informacionRedes {
+  width: 517px;
+  height: 221px;
+  top: 808px;
+  left: 918px;
+  padding: 0px, 0px, 0px, 0px;
+}
+
+div.informacionRedes h3 {
+  width: 470px;
+  height: 37px;
+  top: 808px;
+  left: 918px;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.informacionRedes p {
+  width: 516px;
+  height: 173px;
+  top: 856px;
+  left: 919px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.servicios h4 {
+  width: 276px;
+  height: 38px;
+  top: 1244px;
+  left: 919px;
+  font-family: Roboto;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.servicios div.listado {
+  width: 691px;
+  height: 440px;
+  top: 1344px;
+  left: 919px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+div.servicios div.listado li.numero7 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+footer {
+  font-family: Coiny;
+  font-size: 30px;
+}
