@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 12px;
+}
+a{
+  text-decoration: none; /* saca el subrayado */
+}
+a:hover {
+  color: red; /* cambia el color de la frase cuando pasas el mouse */
+  text-decoration: underline; /* coloca el subrayado en la frase cuando pasas con el mouse */
+}
+

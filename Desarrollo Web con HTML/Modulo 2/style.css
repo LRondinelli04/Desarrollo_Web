@@ -8,20 +8,64 @@
 
 h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 12px;
+p {
+  /* ALINEACION DE TEXTOS */
+  /* text-align: center;
+  text-align: left;
+  text-align: right; */
+  text-align: justify; /* alineacion de los textos de la pagina */
+
+  /* TRANSFORMAICON DE TEXTOS */
+  /* text-transform: lowercase;
+  text-transform: capitalize;
+  text-transform: uppercase; */
+  text-transform: none; /* nos permite cambiar el texto en mayusculas, minusculas etc */
+
+  /* DECORACION DE TEXTOS */
+  /* text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through; */
+  text-decoration: none; /* nos permite subrayar los textos como quitarlos */
+
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+img {
+  /* ANCHOS: PROPIEDAD WIDTH */
+  /* Es unicamente aplicable para elementos de bloque (ejemplo: imagenes, videos, etc).
+    Determina el ANCHO de los elementos.
+    Los valores posibles son: vh, vw, %, px, etc.
+    Los valores que utlizaremos son: % y PX */
+  width: 200px;
+
+  /* ALTOS: PROPIEDAD HEIGHT */
+  /* Es unicamente aplicable para elementos de bloque (ejemplo: imagenes, videos, etc).
+  Determina el ALTO de los elementos
+  Los valores posibles son: vh, vw, %, px, etc.
+  Los valores que utlizaremos son: % y PX
+  Si no le indico un valor, este tomara el valor AUTO (predeterminado), lo que fluira con el contenido del elemento */
+  height: 200px;
+  /* MARGENES EN MI DOCUMENTO */
+  /* La propiedad MARGIN fija un espacio entre los elementos contiguos.
+  Sus medidas pueden ser por porcentajes (%) o por medidas de longitud (PX).
+  En esta se puede trabajar con valores negativos, aunque no sea lo mas comun. En caso de querer trabajar con valores negativos el trabajo que haria ese valor es ir acercando el elemento hacia el lado que estoy controlando en vez de alejarlo*/
+  margin-left: 10px;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none; /* saca el subrayado */
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 a:hover {
-  color: red;
-}
-a:link{
-color: blue;
-}
-a:active{
-  color: #ffff;
+  color: red; /* cambia el color de la frase cuando pasas el mouse */
+  text-decoration: underline; /* coloca el subrayado en la frase cuando pasas con el mouse */
 }
