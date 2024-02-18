@@ -15,3 +15,13 @@ h2 {
   font-weight: 700;
   font-size: 12px;
 }
+
+a:hover {
+  color: red;
+}
+a:link{
+color: blue;
+}
+a:active{
+  color: #ffff;
+}
