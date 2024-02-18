@@ -14,6 +14,11 @@
     <li><a href="#propiedadWidth">Anchos: Propiedad Width</a></li>
     <li><a href="#propiedadHeight">Altos: Propiedad Height</a></li>
     <li><a href="#Margin">Margenes en mi documente: Margin</a></li>
+    <li><a href="#Padding">Padding en mi documento: Padding</a></li>
+    <li><a href="#boxSizing">Box-Sizing</a></li>
+    <li><a href="#fontWeight">Font-Weight</a></li>
+    <li><a href="#fontStyle">Font-Style</a></li>
+
     <div id="alineacionDeTextos">
       <h3>ALINEACION DE TEXTOS</h3>
       <p>
@@ -57,8 +62,8 @@
         videos, etc). Determina el ALTO de los elementos Los valores posibles
         son: vh, vw, %, px, etc. Los valores que utlizaremos son: % y PX Si no
         le indico un valor, este tomara el valor AUTO (predeterminado), lo que
-        fluira con el contenido del elemento EJEMPLO: height: 200px;
-        EJEMPLOS CON IMAGEN:
+        fluira con el contenido del elemento EJEMPLO: height: 200px; EJEMPLOS
+        CON IMAGEN:
         <img
           src="https://www.imprentaonline.net/blog/wp-content/uploads/DALL%C2%B7E-2023-10-16-10.41.49-Illustration-depicting-a-humanoid-robot-with-half-of-its-face-transparent-revealing-intricate-circuits-and-gears-inside.-The-robot-is-holding-a-light-1.png"
           alt="imagen de IA"
@@ -78,6 +83,67 @@
         <li>margin-right: 10px;</li>
         <li>margin-bottom: 10px</li>
         <li>margin-top: 15px;</li>
+      </p>
+    </div>
+    <div id="Padding">
+      <h3>PADDING EN MI DOCUMENTO</h3>
+      <p>
+        Esta propiedad indica el espacio entre los bordes de un elemento y su
+        contenido. A diferencia del MARGIN, no todos los elementos tienen
+        PADDING. Se le puede asignar al igual que el MARGIN valores negativos
+      </p>
+      EJEMPLOS:
+      <li>padding-top: 10px;</li>
+      <li>padding-left: -10px;</li>
+      <li>padding-right: -10px;</li>
+      <li>padding-bottom: 10px;</li>
+    </div>
+    <div id="boxSizing">
+      <h3>BOX-SIZING</h3>
+      <p>
+        Permite o no que el PADDIGN se sume al ancho o alto total de un
+        elemento. Por ejemplo, si a un elemento le agregamos: width 800px +
+        padding 10px = el ancho total quedara en 820px. Es decir, 10px de
+        PADDIGNde cada lado, en total 20px, se sumaran a 800px de width y el
+        elemento sera mas grande que su width inicial.
+      </p>
+      <p>
+        Lo ideal en estos casos es trabajar con Box-Sizing y especificamente con
+        su valor "border-box", para asi hacer que ese padding se tome el width
+        inicial, lo que quedaria como: width 800px + padding 10px = quedara en
+        800px.
+      </p>
+      <p>
+        Esta propiedad la aplicaremos siempre al inicio de modificar un archivo
+        con CSS, lo haremos con el selector universal * y aplicaremos la
+        siguiente linea de codigo: box-sizing: border-box;
+      </p>
+    </div>
+    <div id="fontWeight">
+      <h3>FONT-WEIGHT</h3>
+      <p>
+        Si queremos poner en <b>Negrita</b> un contenido lo podemos hacer con el
+        font-weight. Si bien cuando utilizamo el Google Fonts ya podemos
+        modificar y especificar que tipo de font-weight utilizar, para esto
+        vamos a tener que importar todos aquellos que querramos. Sin embargo,
+        desde CSS podemos aplicar font-weight: bold; para aplicar Negrita, y en
+        caso contrario utilizamos font-weight: normal; para quitarlo.
+      </p>
+      <p>
+        En caso de haberlo importado de Google Fonts podriamos utilizar los
+        numeros normalmente y evitar las palabras "bold" y "normal"
+      </p>
+    </div>
+    <div id="fontStyle">
+      <h3>APLICANDO LA PROPIEDAD FONT-STYLE</h3>
+      <p>
+        Si queremos poner el contenido en <i>Italica</i> lo podemos hacer a
+        traves de Font-Style, permitiendo poner el contenido en Italica o en
+        normal como anteriormente el font-weight
+      </p>
+      <p>
+        Para esto utilizarmeos el font-style: italic; para aplicar el Italica, o
+        el font-style: normal; para dejarlo con la tipografia normal
       </p>
     </div>
   </body>
