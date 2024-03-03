@@ -69,8 +69,3 @@ a {
   margin-left: 10px;
   margin-top: 15px;
 }
-
-a:hover {
-  color: red; /* cambia el color de la frase cuando pasas el mouse */
-  text-decoration: underline; /* coloca el subrayado en la frase cuando pasas con el mouse */
-}
