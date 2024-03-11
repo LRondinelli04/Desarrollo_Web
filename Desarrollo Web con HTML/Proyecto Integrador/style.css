@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -11,6 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+
+/* CSS INFORMACION */
 
 nav h1,
 footer h1 {
@@ -75,11 +79,6 @@ aside img {
   width: 50%;
 }
 
-header img {
-  width: 70%;
-  margin-left: 30%;
-}
-
 footer,
 main,
 header,
@@ -104,6 +103,14 @@ h4 {
 
 footer h1 {
   font-size: 33px;
+  width: 172px;
+  height: 42px;
+}
+
+footer a {
+  width: 318.84px;
+  height: 29.27px;
+  color: #000000;
 }
 
 section {
@@ -112,4 +119,64 @@ section {
 
 main {
   font-size: 21px;
+}
+
+#contacto p {
+  background-color: #fcee21;
+  width: 328.61px;
+  height: 48px;
+  color: #000000;
+}
+
+#redes {
+  size: 25.84px;
+  line-height: 30.28px;
+  color: #808080;
+  width: 134.66px;
+  height: 72.59px;
+}
+
+#redes .redes {
+  width: 76.16px;
+  height: 36.29px;
+}
+
+#redes .wwwwapas {
+  width: 134.66px;
+  height: 36.29px;
+}
+
+/* CSS DE IMAGENES */
+
+nav img {
+  width: 241px;
+  height: 56px;
+}
+
+header section img {
+  width: 687.79px;
+  height: 549.45px;
+}
+
+header img {
+  width: 70%;
+  margin-left: 30%;
+}
+
+#servicios section img {
+  width: 552px;
+  height: 537px;
+}
+
+#imagenesRedes {
+  width: 960.84px;
+  height: 106.14px;
+  top: 2656px;
+  left: 418.21px;
+}
+
+#imagenesRedes a img {
+  width: 117.51px;
+  height: 106.14px;
+  margin-right: 100px;
 }
