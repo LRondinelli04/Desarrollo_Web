@@ -3,3 +3,5 @@ let fm = prompt("Ingrese los metros cuadrados de su vivienda");
 
 let resultado = costoDeBaseM2 * fm;
 alert("El resultado del calculo es: $" + resultado);
+
+// esto es un comentario de prueba 
