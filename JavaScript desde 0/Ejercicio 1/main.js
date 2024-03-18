@@ -11,3 +11,7 @@ alert("El Punto de Equilibrio indicado es de: " + puntoDeEquilibrio);
 
 /* Este metodo imprime en pantalla el resultado
 document.write("El Punto de Equilibrio indicado es de: " + puntoDeEquilibrio); */
+
+/* Para hacer un salto de linea desde JavaScript se puede hacer
+document.write("<br>") */
+
