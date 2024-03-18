@@ -6,8 +6,8 @@ const costosVariables = prompt("Ingrese los costos de variables");
 // variables
 let puntoDeEquilibrio = costosFijos / (precioDeVenta - costosVariables);
 
-// alerta de la informacion 
+// alerta de la informacion
 alert("El Punto de Equilibrio indicado es de: " + puntoDeEquilibrio);
 
-// Este metodo imprime en pantalla el resultado
-/* document.write("El Punto de Equilibrio indicado es de: " + puntoDeEquilibrio); */
+/* Este metodo imprime en pantalla el resultado
+document.write("El Punto de Equilibrio indicado es de: " + puntoDeEquilibrio); */
