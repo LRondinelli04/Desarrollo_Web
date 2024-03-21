@@ -14,6 +14,6 @@ if (nombre !== null && nombre !== "") {
 // Traducir los textos a los distintos idiomas
 const espanol = "Informacion Adicional de las Clases en Vivo";
 const ingles = "Additional Information on Live Classes";
-const frances = "Informations supplémentaires sur les cours en direct"
+const frances = "Informations supplémentaires sur les cours en direct";
 // Asignamos contenido dentro del parrafo con el id informacion
 titulo.innerText = espanol;
