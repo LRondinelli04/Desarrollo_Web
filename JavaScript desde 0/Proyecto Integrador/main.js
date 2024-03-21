@@ -2,7 +2,7 @@
 const costoDeBase = 1.16;
 const fm = 1.06;
 
-// Variables 
+// Variables
 let m2 = prompt("Ingrese los metros cuadrados de su vivienda");
 
 // Resultado
