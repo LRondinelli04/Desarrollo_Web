@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +56,7 @@ h2 {
 }
 
 p {
-  margin-left: 18%;
+  margin-left: 600px;
   width: 700px;
   /*   background-color: white; */
   text-align: left;
