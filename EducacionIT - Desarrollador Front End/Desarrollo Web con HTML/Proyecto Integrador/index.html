@@ -10,147 +10,140 @@
 
   <body>
     <nav>
-      <img src="/EducacionIT - Desarrollador Front End/img/logo.png" alt="" />
-      <ul>
-        <li>
-          <a href="#Inicio">Inicio </a>
-          <a href="#Servicios">Servicios</a>
-          <a href="#Contacto">Contacto</a>
-        </li>
-      </ul>
+        <div>
+            <h1>
+
+                <a href="index.html"> wwwapas</a>
+            </h1>
+
+            <a href="#servicios"> servicios</a>
+            <a href="#contacto">contacto</a>
+
+            <a target="_blank" href="https://www.educacionit.com/">educacionIT</a>
     </nav>
-
-    <header>
-      <section>
-        <h1>somos <strong> wwwapas </strong></h1>
-
-        <h2>social media managers | creadoras de contenido</h2>
-
-        <p>
-          Nos encargamos de construir, gestionar y administrar la comunidad
-          online de tu marca, empresa o negocio.
-          <strong>
-            ¡Creamos relaciones estables y duraderas con tus clientes!</strong
-          >
-        </p>
-      </section>
-
-      <section>
-        <img
-          src="/EducacionIT - Desarrollador Front End/img/foto.png"
-          alt="imagen-wapas"
-        />
-      </section>
-    </header>
-
     <main>
-      <div>
         <section>
-          <h3>¡Hola! Somos SOFI & JULIA,</h3>
 
-          <p>
-            las social media managers, las creadoras de contenido, las
-            copywriters, las generadoras de leads, las diseñadoras, las
-            estrategas en marketing digital, las potenciadoras de ventas, el
-            posicionamiento de tu marca.
-            <strong
-              >¡Somos el complemento que necesitás para hacer crecer tu marca!
-              ¡Somos wwwapas!
-            </strong>
-          </p>
+            <h1> somos <br> <strong> wwwapas </strong></h1>
+
+            <h2> social media managers |creadoras de contenido </h2>
+            <p>
+                Nos encargamos de construir, gestionar y administrar la comunidad online de tu marca, empresa o negocio.
+                <strong>¡Creamos relaciones estables y duraderas con tus clientes! </strong>
+            </p>
+            <img src="/EducacionIT - Desarrollador Front End/img/foto.png" alt="foto wwwapas">
+
+
+
+            <h3>¡Hola! Somos SOFI & JULIA,</h3>
+
+            <p>
+                las social media managers, las creadoras de contenido, las copywriters, las generadoras de leads, las
+                diseñadoras, las estrategas en marketing digital, las potenciadoras de ventas, el posicionamiento de tu
+                marca.
+                <strong>¡Somos el complemento que necesitás para hacer crecer tu marca! ¡Somos wwwapas!</strong>
+
+            </p>
+            <h3>Gestionamos tus redes sociales</h3>
+            <p>
+                La transformación digital no es solo para grandes compañías, todas las empresas deben emprenderla cuanto
+                antes y
+                aquí es donde podemos asistirte. Armamos estrategias a medida para tu empresa, marca o producto.<strong>
+                    ¡Aumentá tu presencia digital y generá nuevas ventas y contactos!</strong></p>
         </section>
 
         <section>
-          <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
-          <p>
-            La transformación digital no es solo para grandes compañías, todas
-            las empresas deben emprenderla cuanto antes y aquí es donde podemos
-            asistirte. Armamos estrategias a medida para tu empresa, marca o
-            producto.<strong>
-              ¡Aumentá tu presencia digital y generá nuevas ventas y contactos!
-            </strong>
-          </p>
-        </section>
-      </div>
 
-      <div id="servicios">
-        <section>
-          <img
-            id="imagen"
-            src="/EducacionIT - Desarrollador Front End/img/img-servicios.png"
-            alt="imagen-servicios"
-          />
-        </section>
+            <section>
+                <img src="/EducacionIT - Desarrollador Front End/img/img-servicios.png" alt="imagen servicios">
 
-        <section>
-          <h2>Servicios</h2>
 
-          <ol>
-            <li>Análisis de perfil (Benchmarking)</li>
-            <li>Revisión y activación de canales</li>
-            <li>Gestión, creación y diseño de contenido</li>
-            <li>Repuestas a mensajes y consultas</li>
-            <li>
-              Segmentación de promociones según el público objetivo de la pauta
-              publicitaria
-            </li>
-            <li>
-              Diagramamos un calendario que se ajuste a los objetivos de la
-              empresa
-            </li>
-            <li class="item">¡Empezamos a comunicar!</li>
-          </ol>
-        </section>
-      </div>
+                <h4>servicios</h4>
 
-      <div id="contacto">
-        <section>
-          <h4>¿Quéres que nos <br />contactemos con vos?</h4>
 
-          <p><b>Envianos tu consulta >></b></p>
-        </section>
 
-        <section></section>
-      </div>
+
+                <a id="servicios"></a>
+                <ol>
+                    <li>Análisis de perfil (Benchmarking)</li>
+                    <li>Revisión y activación de canales</li>
+                    <li>Gestión, creación y diseño de contenido</li>
+                    <li>Repuestas a mensajes y consultas</li>
+                    <li>Segmentación de promociones según el público objetivo de la pauta publicitaria</li>
+                    <li>Diagramamos un calendario que se ajuste a los objetivos de la empresa</li>
+                    <li>¡Empezamos a comunicar!</li>
+                </ol>
+            </section>
+
+
+
+
+            <section>
+
+                <h4><span>¿Querés que nos</span> <br> contactemos con vos?</h4>
+                <a id="contacto"></a>
+                <p>Envianos tu consulta >> </p>
+
+
+                <form action="codigo.php" method="post">
+
+                    <label>Nombre *</label>
+                    <input type="text" required placeholder="Juan García">
+                    <label>Email principal y de referencia *</label>
+                    <input type="email" placeholder="info@mimail.com" required>
+                    <label>Mensaje *</label>
+                    <textarea required></textarea>
+
+                    <button>Enviar consulta</button>
+                    <input type="reset" value="Borrar">
+
+                </form>
+
+
+
+
+
+
+            </section>
+
+            <section>
+                <div>
+                    <p>redes <br> wwwapas</p>
+                </div>
+                <div>
+                    <a title="instagram educacion it" href="https://www.instagram.com/educacionit/" target="_blank">
+                        <img src="/EducacionIT - Desarrollador Front End/img/instagram-icon.png" alt="instagram"></a>
+                </div>
+                <div>
+                    <img src="/EducacionIT - Desarrollador Front End/img/dribbble-icon.png" alt="dribble">
+                </div>
+                <div>
+                    <img src="/EducacionIT - Desarrollador Front End/img/linkedin-icon.png" alt="linkeIn">
+                </div>
+                <div>
+                    <a title="facebook educacion" href="https://www.facebook.com/EducacionIT/" target="_blank">
+                        <img src="/EducacionIT - Desarrollador Front End/img/facebook-icon.png" alt="facebook"></a>
+                </div>
+
+
+            </section>
+
+
     </main>
 
-    <aside id="redes">
-      <p class="redes">redes</p>
-      <p class="wwwwapas">wwwwapas</p>
-    </aside>
-
-    <aside id="imagenesRedes">
-      <a href="http://www.instagram.com">
-        <img
-          src="/EducacionIT - Desarrollador Front End/img/instagram-icon.png"
-          alt="instagram"
-      /></a>
-
-      <a href="http://www.instagram.com"
-        ><img
-          src="/EducacionIT - Desarrollador Front End/img/dribbble-icon.png"
-          alt="dribble"
-        />
-      </a>
-
-      <a href="http://www.linkedin.com"
-        ><img
-          src="/EducacionIT - Desarrollador Front End/img/linkedin-icon.png"
-          alt="linkedIn"
-        />
-      </a>
-
-      <a href="http://www.facebook.com">
-        <img
-          src="/EducacionIT - Desarrollador Front End/img/facebook-icon.png"
-          alt="facebook"
-        />
-      </a>
-    </aside>
-
     <footer>
-      <h1>wwwwpas</h1>
-      <a href="mailto: wwwwapas_sm@gmail.com">wwwwapas_sm@gmail.com</a>
+
+
+        <h1>
+            <a href="index.html"> wwwapas</a>
+        </h1>
+
+
+        <a href="mailto:wwwapas_sm@mail.com?subject=Presupuesto">wwwapas_sm@mail.com</a>
+
+
     </footer>
-  </body>
+
+</body>
+
 </html>
