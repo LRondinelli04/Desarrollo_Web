@@ -11,6 +11,7 @@
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
         alt="Logo JavaScript"
+        id="logo"
       />
       <p id="bienvenido"></p>
       <nav id="idiomas">
@@ -20,13 +21,47 @@
       </nav>
     </header>
     <h1 id="titulo">Informacion Adicional de las Clases en Vivo</h1>
-    <h2 id="subtitulo">Variables en JavaScript</h2>
-    <p id="informacion">
-      Para llamar una variable en JavaScript se usa el termino "let (nombre de
-      variable)" y a este se le puede asignar un valor con = (valor a asignar) o
-      se puede dejar sin asignar un especifico. <br />
-    </p>
-
+    <div class="variables">
+      <h2>Variables en JavaScript</h2>
+      <p>
+        Para llamar una variable en JavaScript se usa el termino "let (nombre de
+        variable)" y a este se le puede asignar un valor con = (valor a asignar)
+        o se puede dejar sin asignar un especifico.
+      </p>
+    </div>
+    <div class="condicionales">
+      <h2>Condicionales en JavaScript</h2>
+      <p>
+        Para saber si en un prompt se ingreso una palabra pero estamos en duda
+        si el usuario utilizo mayusculas o minusculas, lo que se debe hacer es
+        transformar este texto en mayusculas o minusculas con el siguiente
+        codigo: <br /><br />
+        let mensaje = prompt('texto');<br />
+        mensaje.toLowerCase > lo pasa a minuscula <br />
+        mensaje.toUpperCase > lo pasa a mayuscula <br /><br />
+        Esto lo transforma a todo el texto y luego para poder comparar es mas
+        simple ya que solo necesitaremos una condicion y no preguntar por todos
+        los caracteres. <br />
+        A continuacion dejo un ejemplo de esto:
+      </p>
+      <p id="mensaje"></p>
+    </div>
+    <div class="selector">
+      <h2>Ubicar Selectores en JavaScript</h2>
+      <p>
+        Para ubicar de manera correcta un elemento en JavaScript nosotros lo
+        veniamos haciendo con el siguiente codigo: "nombreID.innerText = ''".
+        <br />
+        Sin embargo, esto no es lo mas eficiente ya que en el documentonos
+        podemos encontrar tanto como con IDs o Class, para esto utilizaremosla
+        siguiente codigo: <br />
+        "const mensaje = document.querySelector('#mensaje') > en caso de que
+        sea un ID" <br />
+        "const mensaje = document.querySelector('.mensaje') > en caso de que
+        sea una Clase"
+      </p>
+      <p id="texto"></p>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
