@@ -29,12 +29,13 @@ nav a {
   font-weight: 700;
 }
 
-nav, header{
-    width: 100%;
+nav,
+header {
+  width: 100%;
 }
 
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
 
 h1 {
@@ -50,10 +51,10 @@ h2 {
   color: #04146c;
 }
 
-img{
-    width: 100%
+img {
+  width: 100%;
 }
 
-section{
-    border: 10px solid #1c3ff0;
+section {
+  border: 10px solid #1c3ff0;
 }
