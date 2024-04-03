@@ -89,28 +89,36 @@
       </div>
       <hr />
       <div class="contacto">
-        <h2>
-          ¿Querés que nos <br />
-          contactemos con vos?
-        </h2>
-        <p>Envianos tu consulta >></p>
-        <div class="formulario">
-          <form action="codigo.php">
-            <label>Nombre<span>*</span></label>
-            <input type="text" name="nombre" required class="texto-corto" />
-            <label>Email<span>*</span></label>
-            <input type="text" name="email" required class="texto-corto" />
-            <label>Mensaje<span>*</span></label>
-            <textarea
-              name="mensaje"
-              id="mensaje-texto"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
-            <button type="submit" id="enviar-consulta">Enviar consulta</button>
-            <button type="reset" id="borrar">Borrar</button>
-          </form>
+        <div class="contacto-formulario">
+          <div class="contacto-informacion">
+            <h2>
+              ¿Querés que nos <br />
+              <span>contactemos con vos?</span>
+            </h2>
+            <p>Envianos tu consulta >></p>
+          </div>
+          <div class="formulario">
+            <form action="codigo.php">
+              <label>Nombre<span>*</span></label>
+              <input type="text" name="nombre" required class="texto-corto" />
+              <label>Email<span>*</span></label>
+              <input type="text" name="email" required class="texto-corto" />
+              <label>Mensaje<span>*</span></label>
+              <textarea
+                name="mensaje"
+                id="mensaje-texto"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <div id="botones">
+                <button type="submit" id="enviar-consulta">
+                  Enviar consulta
+                </button>
+                <button type="reset" id="borrar">Borrar</button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="redes">
           <h6>redes<br />wwwapas</h6>
