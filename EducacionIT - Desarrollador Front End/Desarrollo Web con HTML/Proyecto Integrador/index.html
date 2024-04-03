@@ -3,86 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Web Guapas</title>
   </head>
   <body>
-    <div class="encabezado">
-      <h1>wwwapas</h1>
-      <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="contacto">Contacto</a>
-        <a href="login">Login</a>
-      </nav>
-    </div>
-    <div class="informacion">
-      <h1>
-        somos<br />
-        <strong>wwwapas</strong>
-      </h1>
-      <h2>social media managers | creadoras de contenido</h2>
-      <p>
-        Nos encargamos de construir, gestionar y administrar la comunidad online
-        de tu marca, empresa o negocio. ¡Creamos relaciones estables y duraderas
-        con tus clientes!
-      </p>
-      <img src="../../img/foto.png" alt="foto wwwapas" style="width: 150px" />
-      <h4><b>¡Hola! Somos SOFI & JULIA,</b></h4>
-      <p>
-        las social media managers, las creadoras de contenido, las copywriters,
-        las generadoras de leads, las diseñadoras, las estrategas en marketing
-        digital, las potenciadoras de ventas, el posicionamiento de tu marca.
-        <b
-          >¡Somos el complemento que necesitás para hacer crecer tu marca!
-          ¡Somos wwwapas!
-        </b>
-      </p>
-      <h4>Gestionamos tus redes sociales</h4>
-      <p>
-        La transformación digital no es solo para grandes compañías, todas las
-        empresas deben emprenderla cuanto antes y aquí es donde podemos
-        asistirte. Armamos estrategias a medida para tu empresa, marca o
-        producto.
-        <b>¡Aumentá tu presencia digital y generá nuevas ventas y contactos!</b>
-      </p>
-    </div>
-    <hr />
-    <div class="servicios">
-      <img
-        src="../../img/img-servicios.png"
-        alt="imagen servicios"
-        style="width: 150px"
-      />
-      <h4>SERVICIOS</h4>
-      <ol>
-        <li>Análisis de perfil (Benchmarking)</li>
-        <li>Revisión y activación de canales</li>
-        <li>Gestión, creación y diseño de contenido</li>
-        <li>Respuestas a mensajes y consultas</li>
-        <li>
-          Segmentación de promociones según el público objetivo de la pauta
-          publicitaria
-        </li>
-        <li>
-          Diagramamos un calendario que se ajuste a los objetivos de la empresa
-        </li>
-        <b><li>Empezamos a comunicar!</li></b>
-      </ol>
-    </div>
-    <hr />
-    <div class="consulta">
-        <h2>¿Querés que nos <br> contactemos con vos?</h2>
+    <main>
+      <div class="encabezado">
+        <a href="index.html"
+          ><img src="../../img/logo.png" alt="logo wwwapas"
+        /></a>
+        <nav>
+          <a href="#servicios">Servicios</a>
+          <a href="contacto">Contacto</a>
+          <a href="login">Login</a>
+        </nav>
+      </div>
+      <div class="informacion">
+        <div class="titulo">
+          <h1>
+            somos<br />
+            <strong class="titulos">wwwapas</strong>
+          </h1>
+          <h2>social media managers | creadoras de contenido</h2>
+        </div>
+        <div class="nosotros">
+          <p id="cargo">
+            Nos encargamos de construir, gestionar y administrar la comunidad
+            online de tu marca, empresa o negocio.
+            <b>¡Creamos relaciones estables y duraderas con tus clientes!</b>
+          </p>
+          <img
+            src="../../img/foto.png"
+            alt="foto wwwapas"
+            style="width: 150px"
+          />
+        </div>
+        <h4><b>¡Hola! Somos SOFI & JULIA,</b></h4>
+        <p>
+          las social media managers, las creadoras de contenido, las
+          copywriters, las generadoras de leads, las diseñadoras, las estrategas
+          en marketing digital, las potenciadoras de ventas, el posicionamiento
+          de tu marca.
+          <b
+            >¡Somos el complemento que necesitás para hacer crecer tu marca!
+            ¡Somos wwwapas!
+          </b>
+        </p>
+        <h4>Gestionamos tus redes sociales</h4>
+        <p>
+          La transformación digital no es solo para grandes compañías, todas las
+          empresas deben emprenderla cuanto antes y aquí es donde podemos
+          asistirte. Armamos estrategias a medida para tu empresa, marca o
+          producto.
+          <b
+            >¡Aumentá tu presencia digital y generá nuevas ventas y
+            contactos!</b
+          >
+        </p>
+      </div>
+      <hr />
+      <div class="servicios">
+        <img
+          src="../../img/img-servicios.png"
+          alt="imagen servicios"
+          style="width: 150px"
+        />
+        <div class="servicios-informacion">
+          <h3>SERVICIOS</h3>
+          <ol>
+            <li>Análisis de perfil (Benchmarking)</li>
+            <li>Revisión y activación de canales</li>
+            <li>Gestión, creación y diseño de contenido</li>
+            <li>Respuestas a mensajes y consultas</li>
+            <li>
+              Segmentación de promociones según el público objetivo de la pauta
+              publicitaria
+            </li>
+            <li>
+              Diagramamos un calendario que se ajuste a los objetivos de la
+              empresa
+            </li>
+            <b><li>Empezamos a comunicar!</li></b>
+          </ol>
+        </div>
+      </div>
+      <hr />
+      <div class="contacto">
+        <h2>
+          ¿Querés que nos <br />
+          contactemos con vos?
+        </h2>
         <p>Envianos tu consulta >></p>
         <div class="formulario">
-            <label for="">Nombre<b>*</b></b></label>
-            <input type="text" name="nombre" required class="texto-corto">
-            <label for="">Email<b>*</b></label>
-            <input type="text" name="email" required class="texto-corto">
-            <label for="">Mensaje<b>*</b></label>
-            <textarea name="mensaje" id="mensaje-texto" cols="30" rows="10" required></textarea>
+          <form action="codigo.php">
+            <label>Nombre<b>*</b></label>
+            <input type="text" name="nombre" required class="texto-corto" />
+            <label>Email<b>*</b></label>
+            <input type="text" name="email" required class="texto-corto" />
+            <label>Mensaje<b>*</b></label>
+            <textarea
+              name="mensaje"
+              id="mensaje-texto"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <button type="submit" id="enviar-consulta">Enviar consulta</button>
+            <button type="reset" id="borrar">Borrar</button>
+          </form>
         </div>
-    </div>
+        <div class="redes">
+          <h6>redes<br />wwwapas</h6>
+          <div class="redes-imagenes">
+            <a href="https://www.instagram.com/educacionit/"
+              ><img src="../../img/instagram-icon.png" alt="instagram"
+            /></a>
+            <a href="#dribble"
+              ><img src="../../img/dribbble-icon.png" alt="dribble"
+            /></a>
+            <a href="#linkedin"
+              ><img src="../../img/linkedin-icon.png" alt="linkedIn"
+            /></a>
+            <a href="https://www.facebook.com/EducacionIT/"
+              ><img src="../../img/facebook-icon.png" alt="facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
-      <h5>wwwapas</h5>
+      <h5 class="titulos">wwwapas</h5>
       <a href="mailto:wwwapas_sm@mail.com?subject=Presupuesto"
         >wwwapas_sm@gmail.com</a
       >
