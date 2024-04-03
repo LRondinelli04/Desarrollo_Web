@@ -157,11 +157,17 @@ h4 {
 .contacto .formulario input {
   width: 535px;
   height: 55px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contacto .formulario textarea {
   width: 535px;
   height: 175px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #botones button {
