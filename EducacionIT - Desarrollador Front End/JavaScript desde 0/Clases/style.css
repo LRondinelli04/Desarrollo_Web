@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
   background-color: #141414;
   color: #f7df1e;
   font-family: "Roboto Mono", monospace;
+  width: 100%;
 }
 
 header #logo {
@@ -53,14 +55,24 @@ h2 {
   margin-bottom: 20px;
   /* text-transform: lowercase; */
   text-decoration-style: dashed;
+  text-align: center;
 }
 
 p {
   margin-left: 600px;
-  width: 700px;
+  margin-right: 600px;
+  padding: 20px;
+  width: 40%;
   /*   background-color: white; */
   text-align: left;
-  display: inline-block;
+  border: 2px solid #f7df1e;
+  border-radius: 8px;
+}
+
+#condicionales-info {
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 #mensaje {
