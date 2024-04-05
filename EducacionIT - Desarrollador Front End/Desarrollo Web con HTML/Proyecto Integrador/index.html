@@ -2,79 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Web Guapas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
+
   <body>
-    <main>
-      <div class="encabezado">
-        <a href="index.html"
-          ><img src="../../img/logo.png" alt="logo wwwapas"
-        /></a>
-        <nav>
+    <nav>
+      <h1>wwwwapas</h1>
+      <ul>
+        <li>
+          <a href="index.html">Inicio </a>
           <a href="#servicios">Servicios</a>
-          <a href="contacto">Contacto</a>
-          <a href="login">Login</a>
-        </nav>
-      </div>
-      <div class="informacion">
-        <div class="titulo">
-          <h1>
-            somos<br />
-            <strong class="titulos">wwwapas</strong>
-          </h1>
-          <h2>social media managers | creadoras de contenido</h2>
-        </div>
-        <div class="nosotros">
-          <p id="cargo">
-            Nos encargamos de construir, gestionar y administrar la comunidad
-            online de tu marca, empresa o negocio.
-            <b>¡Creamos relaciones estables y duraderas con tus clientes!</b>
-          </p>
-          <img
-            src="../../img/foto.png"
-            alt="foto wwwapas"
-            style="width: 150px"
-          />
-        </div>
-        <h4><b>¡Hola! Somos SOFI & JULIA,</b></h4>
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="encolumnar">
+      <section id="presentacion">
+        <h1>somos <strong class="grande"> wwwapas </strong></h1>
+
+        <h2>social media managers | creadoras de contenido</h2>
+
         <p>
-          las social media managers, las creadoras de contenido, las
-          copywriters, las generadoras de leads, las diseñadoras, las estrategas
-          en marketing digital, las potenciadoras de ventas, el posicionamiento
-          de tu marca.
-          <b
-            >¡Somos el complemento que necesitás para hacer crecer tu marca!
-            ¡Somos wwwapas!
-          </b>
-        </p>
-        <h4>Gestionamos tus redes sociales</h4>
-        <p>
-          La transformación digital no es solo para grandes compañías, todas las
-          empresas deben emprenderla cuanto antes y aquí es donde podemos
-          asistirte. Armamos estrategias a medida para tu empresa, marca o
-          producto.
-          <b
-            >¡Aumentá tu presencia digital y generá nuevas ventas y
-            contactos!</b
+          Nos encargamos de construir, gestionar y administrar la comunidad
+          online de tu marca, empresa o negocio.
+          <strong>
+            ¡Creamos relaciones estables y duraderas con tus clientes!</strong
           >
         </p>
+      </section>
+
+      <section>
+        <img src="../../img/foto.png" alt="imagen-wapas" />
+      </section>
+    </header>
+
+    <main>
+      <div class="encolumnar">
+        <section>
+          <h3>¡Hola! Somos SOFI & JULIA,</h3>
+
+          <p>
+            las social media managers, las creadoras de contenido, las
+            copywriters, las generadoras de leads, las diseñadoras, las
+            estrategas en marketing digital, las potenciadoras de ventas, el
+            posicionamiento de tu marca.
+            <strong
+              >¡Somos el complemento que necesitás para hacer crecer tu marca!
+              ¡Somos wwwapas!
+            </strong>
+          </p>
+        </section>
+
+        <section>
+          <h3>GESTIONAMOS TUS REDES SOCIALES</h3>
+          <p>
+            La transformación digital no es solo para grandes compañías, todas
+            las empresas deben emprenderla cuanto antes y aquí es donde podemos
+            asistirte. Armamos estrategias a medida para tu empresa, marca o
+            producto.<strong>
+              ¡Aumentá tu presencia digital y generá nuevas ventas y contactos!
+            </strong>
+          </p>
+        </section>
       </div>
-      <hr />
-      <div class="servicios">
-        <img
-          src="../../img/img-servicios.png"
-          alt="imagen servicios"
-          style="width: 150px"
-        />
-        <div class="servicios-informacion">
-          <h3>SERVICIOS</h3>
+
+      <div class="encolumnar" id="servicios">
+        <section>
+          <img
+            id="imagen"
+            src="../../img/img-servicios.png"
+            alt="imagen-servicios"
+          />
+        </section>
+
+        <section>
+          <h2 id="titulo">Servicios</h2>
+
           <ol>
             <li>Análisis de perfil (Benchmarking)</li>
             <li>Revisión y activación de canales</li>
             <li>Gestión, creación y diseño de contenido</li>
-            <li>Respuestas a mensajes y consultas</li>
+            <li>Repuestas a mensajes y consultas</li>
             <li>
               Segmentación de promociones según el público objetivo de la pauta
               publicitaria
@@ -83,67 +95,63 @@
               Diagramamos un calendario que se ajuste a los objetivos de la
               empresa
             </li>
-            <b><li>Empezamos a comunicar!</li></b>
+            <li class="item">¡Empezamos a comunicar!</li>
           </ol>
-        </div>
+        </section>
       </div>
-      <hr />
-      <div class="contacto">
-        <div class="contacto-formulario">
-          <div class="contacto-informacion">
-            <h2>
-              ¿Querés que nos <br />
-              <span>contactemos con vos?</span>
-            </h2>
-            <p>Envianos tu consulta >></p>
-          </div>
-          <div class="formulario">
-            <form action="codigo.php">
-              <label>Nombre<span>*</span></label>
-              <input type="text" name="nombre" required class="texto-corto" />
-              <label>Email<span>*</span></label>
-              <input type="text" name="email" required class="texto-corto" />
-              <label>Mensaje<span>*</span></label>
+
+      <div class="encolumnar" id="contacto">
+        <section>
+          <h4>¿Quéres que nos <br />contactemos con vos?</h4>
+
+          <p class="item">Envianos tu consulta >></p>
+        </section>
+
+        <section>
+          <form action="codigo.php">
+            <label>
+              Nombre <span>*</span> <br />
+              <input name="nombre" required type="text"
+            /></label>
+            <label>
+              Email <span>*</span><br />
+              <input name="email" required type="email"
+            /></label>
+            <label for="">
+              Mensaje <span>*</span> <br />
               <textarea
-                name="mensaje"
-                id="mensaje-texto"
+                required
+                name="comentarios"
                 cols="30"
                 rows="10"
-                required
               ></textarea>
-              <div id="botones">
-                <button type="submit" id="enviar-consulta">
-                  Enviar consulta
-                </button>
-                <button type="reset" id="borrar">Borrar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="redes">
-          <h6>redes<br />wwwapas</h6>
-          <div class="redes-imagenes">
-            <a href="https://www.instagram.com/educacionit/"
-              ><img src="../../img/instagram-icon.png" alt="instagram"
-            /></a>
-            <a href="#dribble"
-              ><img src="../../img/dribbble-icon.png" alt="dribble"
-            /></a>
-            <a href="#linkedin"
-              ><img src="../../img/linkedin-icon.png" alt="linkedIn"
-            /></a>
-            <a href="https://www.facebook.com/EducacionIT/"
-              ><img src="../../img/facebook-icon.png" alt="facebook"
-            /></a>
-          </div>
-        </div>
+            </label>
+
+            <div class="boton encolumnar">
+              <input type="submit" value="Enviar Consulta" />
+              <input type="reset" value="Borrar" />
+            </div>
+          </form>
+        </section>
       </div>
     </main>
+
+    <aside class="encolumnar">
+      <a href="http://www.instagram.com">
+        <img src="../../img/instagram-icon.png" alt="instagram" /></a
+      ><a href="http://www.instagram.com"
+        ><img src="../../img/dribbble-icon.png" alt="dribble" />
+      </a>
+      <a href="http://www.instagram.com"
+        ><img src="../../img/linkedin-icon.png" alt="linkedIn" /> </a
+      ><a href="http://www.instagram.com"
+        ><img src="../../img/facebook-icon.png" alt="facebook" />
+      </a>
+    </aside>
+
     <footer>
-      <h5 class="titulos">wwwapas</h5>
-      <a href="mailto:wwwapas_sm@mail.com?subject=Presupuesto"
-        >wwwapas_sm@gmail.com</a
-      >
+      <h1>wwwwpas</h1>
+      <a href="mailto: wwwwapas_sm@gmail.com">wwwwapas_sm@gmail.com</a>
     </footer>
   </body>
 </html>
