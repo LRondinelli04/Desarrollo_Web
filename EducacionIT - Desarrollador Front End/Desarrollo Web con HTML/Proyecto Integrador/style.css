@@ -2,10 +2,7 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   font-weight: 400;
-  width: 100%;
 }
 
 body {
@@ -14,6 +11,7 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 90px;
+  margin: 0;
 }
 
 .titulos {
@@ -24,6 +22,12 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
+  padding: 20px;
+  align-items: center;
+}
+
+nav h1 {
+  margin-right: auto;
 }
 
 nav .titulos {
@@ -33,7 +37,6 @@ nav .titulos {
 
 nav ul {
   list-style: none;
-  padding: 8px;
 }
 
 nav ul li {
@@ -49,9 +52,211 @@ nav ul a {
   height: 30px;
 }
 
-#contacto{
+#contacto {
   margin-left: 80px;
   margin-right: 80px;
 }
 
 /* PRESENTACION E INFORMACION */
+
+.encolumnar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#presentacion {
+  width: 30%;
+}
+
+#presentacion h1 {
+  font-size: 48px;
+}
+
+#presentacion h1 strong {
+  font-size: 88px;
+}
+
+#presentacion h2 {
+  background-color: #fcee21;
+  padding-left: 5px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#presentacion p {
+  font-size: 24px;
+}
+
+#presentacion p strong {
+  font-weight: 700;
+}
+
+.encolumnar section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#imagen-presentacion {
+  margin-left: auto;
+}
+
+.encolumnar section img {
+  width: 600px;
+  height: auto;
+}
+
+/* MAIN */
+
+main {
+  font-size: 22px;
+}
+
+main .encolumnar section {
+  width: 550px;
+}
+
+section h3 {
+  font-size: 26px;
+  font-weight: 700;
+  background-color: #fcee21;
+  padding-left: 5px;
+}
+
+main section p strong {
+  font-weight: 700;
+}
+
+main .encolumnar {
+  border-bottom: 1px solid #000000;
+}
+
+/* SERVICIOS */
+#servicios {
+  width: 100%;
+}
+
+#servicios section {
+  width: 50%;
+}
+
+#servicios img {
+  width: 552px;
+  height: auto;
+}
+
+#servicios h2,
+.item {
+  font-weight: 700;
+}
+
+#servicios h2 {
+  font-size: 40px;
+}
+
+#servicios ol li {
+  margin-bottom: 6%;
+}
+
+.item {
+  background-color: #fcee21;
+  font-size: 30px;
+}
+
+section {
+  width: 45%;
+}
+
+#servicios {
+  border-bottom: 1px solid #000000;
+}
+
+/* CONTACTO */
+
+#contacto h4 {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 50px;
+  padding-left: 6%;
+}
+
+#contacto .item {
+  text-align: center;
+  width: 385px;
+  height: 44px;
+  padding-top: 3px;
+}
+
+#titulo-contacto {
+  margin-top: -40px;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form label span {
+  color: #ff0000;
+}
+
+form input {
+  width: 535px;
+  height: 55px;
+}
+
+form textarea {
+  width: 535px;
+  height: 175px;
+}
+
+form input,
+form textarea {
+  margin-top: 15px;
+}
+
+.boton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton input {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  width: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 18px;
+}
+
+#contacto {
+  border-bottom: none;
+}
+
+/* REDES */
+
+aside{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+aside p {
+  color: #808080;
+  font-size: 25px;
+}
+
+aside img{
+  width: 120px;
+  height: auto;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #fcee21;
+  width: 100%;
+  height: au;
+}
