@@ -12,10 +12,10 @@ palabra "ipsum" si es que existe.
 let text = "Lorem ipsum dolor sit amet.";
 
 // Crear funcion
-function contarCaracteres(text) {
+function contarCaracteres(texto) {
   // 2)
   let caracteres = 0;
-  caracteres = text.length;
+  caracteres = texto.length;
   console.log(
     "La cantidad de caracteres que tiene el texto es de: ",
     caracteres
@@ -33,9 +33,9 @@ function contarCaracteres(text) {
 }
 
 // 4)
-function imprimir(text) {
-  if (text.length >= 4) {
-    console.log(text.substring(0, 4).toUpperCase()); //Imprime de la posicion 0 a 4 del texto
+function imprimir(texto) {
+  if (texto.length >= 4) {
+    console.log(texto.substring(0, 4).toUpperCase()); //Imprime de la posicion 0 a 4 del texto
   } else {
     console.log(
       "El texto tiene menos de 4 caracteres, por lo tanto no alcanza a imprimir el mensaje"
@@ -43,6 +43,6 @@ function imprimir(text) {
   }
 }
 
-// Llamo a la funcion
+// Llamo a las funciones
 contarCaracteres(text);
 imprimir(text);
