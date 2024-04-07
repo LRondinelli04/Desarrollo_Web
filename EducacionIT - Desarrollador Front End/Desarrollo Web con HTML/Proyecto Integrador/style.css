@@ -51,6 +51,7 @@ nav img {
 header {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 #titulo {
@@ -71,6 +72,7 @@ header {
   font-weight: 400;
   background: #fcee21;
   padding-left: 15px;
+  margin-top: -40px;
 }
 
 header p {
@@ -135,7 +137,7 @@ header img {
 }
 
 #listado {
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 #listado h3 {
@@ -165,16 +167,6 @@ header img {
 #mensaje {
   display: flex;
   justify-content: space-between;
-}
-
-#mensaje h2 {
-  color: #ffffff;
-  background-color: #000000;
-  /* text-align: center; */
-  /* width: 80%; */
-  padding-left: 15px;
-  padding-right: 10px;
-  font-size: 50px;
 }
 
 #mensaje h2 {
@@ -213,11 +205,13 @@ form label span {
 form input {
   width: 535px;
   height: 55px;
+  padding: 15px;
 }
 
 form textarea {
   width: 535px;
   height: 175px;
+  padding: 15px;
 }
 
 #botones {
@@ -255,10 +249,37 @@ form textarea {
   color: #808080;
 }
 
+#redes section {
+  margin-left: 10%;
+}
+
 #redes section img {
   width: 117px;
   height: auto;
   margin-left: 200px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #fcee21;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+footer h6 {
+  font-family: "Coiny", sans-serif;
+  font-size: 33px;
+  line-height: 36px;
+  margin: 0;
+  margin-right: 80px;
+}
+
+footer a {
+  color: #000000;
 }
 
 /* body {
