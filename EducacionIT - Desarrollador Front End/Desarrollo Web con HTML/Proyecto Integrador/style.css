@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
- /*  margin: 0; */
-/*   padding: 0; */
+  /*  margin: 0; */
+  /*   padding: 0; */
 }
 
 body {
@@ -19,7 +19,8 @@ main {
   padding-right: 3%;
   width: 90%;
   max-width: 1660px;
-  margin-left: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 a {
@@ -115,10 +116,13 @@ header img {
   background-color: #fcee21;
   width: 470px;
   padding-left: 10px;
+  padding-right: 10px;
+  max-width: fit-content;
 }
 
 #sofi-juli {
   width: 338px;
+  max-width: fit-content;
 }
 
 .sobre-nosotros p {
