@@ -1,6 +1,5 @@
 const caja = document.getElementById("caja");
 
-
 // Declaramos funciones de control
 
 function pintarRojo() {
@@ -33,4 +32,14 @@ function pintarVerde() {
 function reset() {
   caja.style = "none";
   caja.innerText = "";
+}
+
+function mostrarOcultar() {
+  if (caja.style.display === "none") {
+    // mostrar();
+    caja.style.display = "block";
+  } else {
+    // ocultar();
+    caja.style.display = "none";
+  }
 }
