@@ -110,15 +110,23 @@
 
           <section id="formulario">
             <form action="codigo.php">
-              <label> Nombre <span>*</span> </label> <br /><br />
-              <input type="text" required name="nombre" />
-              <br /><br />
-              <label> Email <span>*</span> </label> <br />
+              <div>
+                <label for="nombre"> Nombre <span>*</span> </label>
+                <br />
+                <input type="text" required name="nombre" />
+              </div>
               <br />
-              <input type="text" required name="email" />
-              <br /><br /><label>Mensaje <span>*</span></label> <br /><br />
-              <textarea name="mensaje" required></textarea>
-
+              <div>
+                <label for="email"> Email <span>*</span> </label>
+                <br />
+                <input type="text" required name="email" />
+              </div>
+              <br />
+              <div>
+                <label for="mensaje">Mensaje <span>*</span></label>
+                <br />
+                <textarea name="mensaje" required></textarea>
+              </div>
               <section id="botones">
                 <button type="submit" id="enviar">Enviar consulta</button>
                 <button type="reset" id="borrar">Borrar</button>

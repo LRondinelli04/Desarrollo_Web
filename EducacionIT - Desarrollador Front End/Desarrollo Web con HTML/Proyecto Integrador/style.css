@@ -195,20 +195,25 @@ header img {
   padding: 5px;
   padding-left: 8px;
   padding-right: 8px;
+  max-width: fit-content;
 }
 
 form {
   margin: auto;
 }
 
-form label {
+form div label {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 50px;
 }
 
 form label span {
   color: #ff0000;
+}
+
+form input,
+form textarea {
+  margin-top: 20px;
 }
 
 form input {

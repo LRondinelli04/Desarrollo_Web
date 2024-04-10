@@ -44,6 +44,8 @@ img {
 #producto .precio {
   display: flex;
   justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h5 {
