@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+}
+
+#contenedor {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+    #presentacion{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+        #imagen{
+            margin-bottom: 15px;
+        }
+        
+            #imagen img{
+                border-radius: 50%;
+                width: 30%;
+            }
+
+        #nombre{
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+            #nombre h3{
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+        #ubicacion {
+            color: hsl(75, 94%, 57%);
+            margin-bottom: 30px;
+        }
+
+        #cargo p{
+            font-weight: 400;
+        }
+
+/* ---------- */
+
+.red {
+  background-color: hsl(0, 0%, 20%); padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  max-height: fit-content;
+}
+
+    .red a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .red a:hover{
+        color: hsl(75, 94%, 57%);
+    }
