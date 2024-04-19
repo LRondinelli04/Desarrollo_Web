@@ -1,0 +1,29 @@
+/* Estilo de menu hamburguesa */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem; /* Depende de lo que mida la letra (se adapta) */
+  background-color: #e82;
+}
+
+.menu {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px
+) {
+  nav button {
+    display: none;
+  }
+  .menu {
+    width: auto;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.menu li{
+    list-style: none;
+}

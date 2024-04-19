@@ -1,0 +1,15 @@
+/* En este archivo vamos a decir como son los estilos generales de la pagina */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth; /*Controla el deslizamiento en la pagina*/
+}
+
+nav a,
+.social a {
+  text-decoration: none;
+}
+
