@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 20px 40px;
+}
+
+
+.boton{
+  background-color: #04146c;
+  max-width: fit-content;
+  padding: 15px 22px;
+  border-radius: 10px;
+}
+
+  .boton a{
+    color: #ffffff;
+    text-decoration: none;
+  }

@@ -1,0 +1,31 @@
+#encabezado {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+    #info {
+    width: 478px;
+    height: 362px;
+    }
+
+        #info div {
+        margin: 40px 0;
+        }
+
+        #titulo h1 {
+        font-size: 58px;
+        font-weight: 700;
+        color: #15163d;
+        }
+
+        #subtitulo p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #15163d;
+        }
+
+    #imagen {
+    width: 593px;
+    height: 393px;
+    }

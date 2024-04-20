@@ -1,0 +1,30 @@
+#navegador {
+  display: flex;
+  justify-content: space-between;
+}
+
+    #icono{
+        width: 70px;
+    }
+
+
+    #navegacion{
+        display: flex;
+        align-items: center;
+    }
+
+    #navegacion ul{
+        display: flex;
+        align-items: center;
+    }
+
+    #navegacion ul li{
+        list-style: none;
+    }
+
+    #navegacion ul li a{
+        text-decoration: none;
+        color: #15163d;
+        font-size: 16px;
+        margin: 0px 15px;
+    }
