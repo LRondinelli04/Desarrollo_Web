@@ -28,3 +28,15 @@
         font-size: 16px;
         margin: 0px 15px;
     }
+
+   /*  @media screen and (min-width: 600px
+    ) {
+      #navegador button {
+        display: none;
+      }
+      #navegacion {
+        width: auto;
+        display: flex;
+        gap: 0.5rem;
+      }
+    } */

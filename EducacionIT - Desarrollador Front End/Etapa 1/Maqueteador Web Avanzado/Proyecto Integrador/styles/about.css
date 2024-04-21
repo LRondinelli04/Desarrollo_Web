@@ -1,0 +1,20 @@
+.encolumnar {
+  display: flex;
+  justify-content: space-between;
+}
+
+    #about h3, #about p{
+        margin-top: 40px;
+    }
+
+    #about h3 {
+        font-size: 58px;
+        font-weight: 700;
+        color: #15163d;
+    }
+
+    #about p{
+        font-size: 16px;
+        font-weight: 300;
+        color: #15163d;
+    }

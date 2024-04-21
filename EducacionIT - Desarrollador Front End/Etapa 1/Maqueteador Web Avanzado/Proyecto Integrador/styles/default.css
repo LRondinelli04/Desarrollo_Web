@@ -11,5 +11,11 @@
 /* Encabezado */
 @import url(encabezado.css);
 
+/* About */
+@import url(about.css);
+
+/* Testimonios */
+@import url(testimonios.css);
+
 /* Footer */
 
