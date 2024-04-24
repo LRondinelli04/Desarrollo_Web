@@ -6,19 +6,24 @@
   scroll-behavior: smooth;
 }
 
-body{
-  padding: 40px 100px;
+main {
+  padding: 0px 100px;
+  padding-top: 30px;
+  max-height: fit-content;
 }
 
-
-.boton{
+.boton {
   background-color: #04146c;
   max-width: fit-content;
   padding: 15px 22px;
   border-radius: 10px;
 }
 
-  .boton a{
-    color: #ffffff;
-    text-decoration: none;
-  }
+.boton a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section:not(#navegador):not(#contacto) {
+  margin: 100px 0px;
+}
