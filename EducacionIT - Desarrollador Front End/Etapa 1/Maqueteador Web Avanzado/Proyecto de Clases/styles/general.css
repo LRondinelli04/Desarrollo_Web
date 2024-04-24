@@ -8,8 +8,28 @@
   scroll-behavior: smooth; /*Controla el deslizamiento en la pagina*/
 }
 
+/* Reinicio de Estilos */
+body,
+h1,
+h2,
+h3,
+header p,
+.menu,
+.m-0 {
+  margin: 0;
+}
+
+.menu,
+.p-0 {
+  padding: 0;
+}
+
 nav a,
 .social a {
   text-decoration: none;
 }
 
+.menu,
+.list-unstyled {
+  list-style: none;
+}
