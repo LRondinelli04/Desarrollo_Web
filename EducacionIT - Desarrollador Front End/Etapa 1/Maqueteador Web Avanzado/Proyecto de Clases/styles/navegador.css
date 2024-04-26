@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   padding: 0.5rem;
   background: #e82 linear-gradient(to top right, #e82, darkred);
 }
@@ -25,7 +25,7 @@ nav {
 .menu a.activo,
 .menu a:hover {
   color: #eee;
-  text-shadow: 0 0 0.2rem; /* -x+ -y+ blur color */
+  text-shadow: 0 0 0.01rem; /* -x+ -y+ blur color */
 }
 
 nav a {
@@ -57,6 +57,7 @@ nav a:hover {
     padding: 0.5rem calc(50vw - 660px); /*top right bottom left*/
   }
 }
+
 @media print {
   nav {
     display: none;

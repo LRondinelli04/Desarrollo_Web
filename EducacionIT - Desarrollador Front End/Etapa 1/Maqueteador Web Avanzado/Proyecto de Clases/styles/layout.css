@@ -1,0 +1,62 @@
+/* Definicion de Areas */
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    "nav";
+}
+
+/* Asignacion de Areas */
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+nav {
+  grid-area: nav;
+}
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "nav header "
+      "nav main "
+      "footer footer ";
+  }
+}
+
+/* Extra Large Devices - Desktops */
+@media screen and (min-width: 1200px) {
+  body {
+    grid-template-areas:
+      " header"
+      " nav "
+      " main "
+      " footer ";
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  section {
+    grid-column: 1; /* SHORTHAND O ATAJO: column-start | column-end*/
+  }
+
+  aside {
+    grid-column: 2;
+    /* que ocupe toda la fila */
+    grid-row: 1 / 5; /* SHORTHAND O ATAJO: row-start | row-end */
+  }
+}

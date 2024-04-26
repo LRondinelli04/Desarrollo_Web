@@ -4,14 +4,17 @@ No voy a poner codigo de estilo */
 /* Elementos Externos */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+@import url("fonts.css");
+
 /* Reglas Generales */
 @import url("general.css");
+@import url("layout.css"); /* Grid */
 
 /* Navegacion Principal */
 @import url("navegador.css");
 
 /* Cabecera de Pagina */
-@import url();
+@import url("header.css");
 
 /* Contenido Principal */
 @import url();
