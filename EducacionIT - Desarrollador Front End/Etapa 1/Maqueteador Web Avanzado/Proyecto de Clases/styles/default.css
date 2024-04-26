@@ -17,7 +17,7 @@ No voy a poner codigo de estilo */
 @import url("header.css");
 
 /* Contenido Principal */
-@import url();
-
+@import url("forms.css");
+@import url("sections.css");
 /* Pie de Pagina */
 @import url();

@@ -36,19 +36,70 @@
     </header>
     <!-- Contenido Principal -->
     <main>
-      <section id="promociones">
+      <section id="promociones" class="card">
         <h2>Promociones</h2>
       </section>
-      <section id="menu">
+      <section id="menu" class="card">
         <h2>Menu</h2>
       </section>
-      <section id="pedidos">
+      <section id="pedidos" class="card"> 
         <h2>Pedidos</h2>
+
+        <!-- Formulario de Delivery -->
+        <form action="codigo.php" method="post">
+          <label for="name">Ingrese su Nombre y Apellido</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Lucas Rondinelli"
+          />
+
+          <label for="ticket">Ingrese su Cupon de Descuento</label>
+          <input
+            type="text"
+            id="ticket"
+            name="ticket"
+            placeholder="1234-ABCD-5678"
+          />
+
+          <label for="order">Seleccione su Tipo de Pedido</label>
+          <select name="order" id="order" required>
+            <option value="1">Delivery</option>
+            <option value="2">Retirar en el Local</option>
+          </select>
+
+          <label for="menu">Seleccione su Opcion del Menu</label>
+          <select name="menu" id="menu" required multiple>
+            <option value="1" >Pizza</option>
+            <option value="2" >Hamburguesa</option>
+            <option value="3" >Milanesa</option>
+            <option value="4" >Tarta</option>
+            <option value="5" >Empanadas</option>
+            <option value="6" >Tortilla</option>
+            <option value="7" >Ensalada</option>
+            <option value="8" >Sushi</option>
+            <option value="9" >Pasta</option>
+            <option value="10" >Pollo</option>
+          </select>
+
+          <label for="description">Detalle como quiere su orden</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="tortilla bien babbe..."
+          ></textarea>
+          <div id="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </div>
+        </form>
       </section>
-      <section id="contacto">
+      <section id="contacto" class="card">
         <h2>Contacto</h2>
       </section>
-      <aside>
+      <aside class="card">
         <header class="header">
           <h2>Sugerencias</h2>
           <p>Tal vez te interese...</p>

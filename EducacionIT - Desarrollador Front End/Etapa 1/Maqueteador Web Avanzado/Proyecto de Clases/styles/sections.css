@@ -1,0 +1,22 @@
+main {
+  background: #333
+    url(https://img.freepik.com/foto-gratis/surtido-plano-deliciosa-comida-brasilena_23-2148739179.jpg)
+    center/cover;
+  background-attachment: fixed;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: -0.2rem 0.25rem 0.5rem #ccc;
+  overflow: hidden; /* Para que el contenido no se salga del contenedor */
+  background-color: #ededed;
+}
+
+.card .header {
+  margin: -1rem -1rem 0.5rem;
+}
+
+aside.card {
+  min-height: calc(100vh - 3rem);
+}

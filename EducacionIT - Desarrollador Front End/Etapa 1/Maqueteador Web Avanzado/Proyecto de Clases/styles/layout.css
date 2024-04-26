@@ -57,6 +57,6 @@ nav {
   aside {
     grid-column: 2;
     /* que ocupe toda la fila */
-    grid-row: 1 / 5; /* SHORTHAND O ATAJO: row-start | row-end */
+    grid-row: 1; /* SHORTHAND O ATAJO: row-start | row-end */
   }
 }
