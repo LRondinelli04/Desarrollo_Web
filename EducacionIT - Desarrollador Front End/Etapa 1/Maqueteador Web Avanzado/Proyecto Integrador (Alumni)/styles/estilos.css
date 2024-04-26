@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #15163D;
+    line-height: 27.5px;
+
+}
+
+main, header, nav {
+    width: 83.33%;
+    margin: auto;
+}
+
+p, a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+section div, header div {
+    width: 50%;
+}
+
+.cuarenta {
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: #15163D;
+}
+
+main img, header img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-size: 58px;
+    line-height: 100%;
+}
+
+ul, h1, h2, h3, h4, p {
+    text-transform: capitalize;
+}
