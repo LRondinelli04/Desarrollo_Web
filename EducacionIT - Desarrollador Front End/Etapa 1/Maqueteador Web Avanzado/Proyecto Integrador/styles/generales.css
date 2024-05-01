@@ -1,18 +1,39 @@
+/* Aplicar modificaciones para hacer la pagina responsive arrancando por el formato para celulares, es decir, con un max-width de 768px */
+
+/* En este css se haran modificacion generales/globales de la pagina */
+
 * {
   box-sizing: border-box;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
-main {
+/* Quiero que el body no tenga que hacer un scroll hacia la derecha para poder visualizar bien todos sus elementos */
+
+/* Contenido Mobile */
+
+body {
+  font-size: 68.9%;
+  width: 100%; /* o algún otro valor relativo */
+  max-width: 768px; /* o algún otro valor relativo */
+  margin: auto;
+  background-image: radial-gradient(circle at top, #5974ff, white 30%);
+}
+
+/* Contenido Desktop */
+@media screen and (min-width: 1440px) {
+}
+
+/* main {
   padding: 0px 100px;
   padding-top: 30px;
   max-height: fit-content;
-}
+} */
 
-.boton {
+/* .boton {
   background-color: #04146c;
   max-width: fit-content;
   padding: 15px 22px;
@@ -22,8 +43,8 @@ main {
 .boton a {
   color: #ffffff;
   text-decoration: none;
-}
+} */
 
-section:not(#navegador):not(#contacto) {
+/* section:not(#navegador):not(#contacto) {
   margin: 100px 0px;
-}
+} */
