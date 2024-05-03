@@ -44,7 +44,7 @@ nav {
 
   main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 1rem;
     padding: 1rem;
     width: 100%;
@@ -58,5 +58,7 @@ nav {
     grid-column: 2;
     /* que ocupe toda la fila */
     grid-row: 1; /* SHORTHAND O ATAJO: row-start | row-end */
+    /* grid-row-start: 1; */
+    grid-row-end: 5;
   }
 }
