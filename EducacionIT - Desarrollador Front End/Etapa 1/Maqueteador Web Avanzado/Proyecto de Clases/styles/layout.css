@@ -2,10 +2,10 @@
 body {
   display: grid;
   grid-template-areas:
+    "nav"
     "header"
     "main"
-    "footer"
-    "nav";
+    "footer";
 }
 
 /* Asignacion de Areas */

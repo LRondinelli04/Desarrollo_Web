@@ -1,25 +1,37 @@
 /* Estilo de menu hamburguesa */
 nav {
+  position: sticky;
+  /* Explicacion:
+    Sticky: se mantiene fijo en la pantalla, pero solo cuando se desplaza hacia arriba.
+  */
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  /* Explicacion: 
+    z-index: 4; es para que el menu se muestre por encima de los demas elementos.
+  */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
   padding: 0.5rem;
-  background: #e82 linear-gradient(to top right, #e82, darkred);
+  background: var(--main) linear-gradient(to top right, var(--main), darkred);
 }
 
 .menu {
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease;
+  transition: all 0.2s ease;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .menu.activo {
   max-height: 100vh;
   transition: max-height 0.8s ease;
   /* espacio entre el menu y el icono IT*/
-  /* margin-top: 1rem; */
+  padding: 0.5rem;
 }
 
 .menu a.activo,
@@ -43,11 +55,28 @@ nav a:hover {
   nav button {
     display: none;
   }
+
+  #nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: auto;
+    position: static;
+    top: auto;
+    bottom: auto;
+  }
+  
   .menu {
-    display: flex;
+    position: static;
+    /* 
+      Explicacion:
+      Static: es la posicion por defecto de los elementos, se apilan uno sobre otro.
+    */
+    display: grid;
     width: auto;
     max-height: 600px;
     gap: 0.5rem;
+    background-image: none;
+    margin-left: 20px;
   }
 }
 

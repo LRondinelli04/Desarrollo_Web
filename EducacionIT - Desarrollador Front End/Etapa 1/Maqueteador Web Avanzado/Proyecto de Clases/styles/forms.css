@@ -32,9 +32,14 @@ form :focus {
   box-shadow: 0 0 0.25rem #e82, 0 0 0.5rem #eee;
 }
 
+form #botones {
+  display: flex;
+  justify-content: center;
+}
+
 form button {
   padding: 0.5rem 20px;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   background-color: #e82;
   color: #fff;
   border: none;

@@ -9,6 +9,7 @@ No voy a poner codigo de estilo */
 /* Reglas Generales */
 @import url("general.css");
 @import url("layout.css"); /* Grid */
+@import url("variables.css");
 
 /* Navegacion Principal */
 @import url("navegador.css");
@@ -20,4 +21,4 @@ No voy a poner codigo de estilo */
 @import url("forms.css");
 @import url("sections.css");
 /* Pie de Pagina */
-@import url();
+@import url("footer.css");

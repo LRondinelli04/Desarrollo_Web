@@ -5,6 +5,19 @@ main {
   background-attachment: fixed;
 }
 
+main section {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: -0.2rem 0.25rem 0.5rem #ccc;
+}
+
+main section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .card {
   border-radius: 0.5rem;
   padding: 1rem;

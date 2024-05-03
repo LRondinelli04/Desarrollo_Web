@@ -19,6 +19,12 @@ header p,
   margin: 0;
 }
 
+html {
+  /* Quiero sacar el desbordamiento de elementos sobre el eje x, ya que me genera un scroll que no deseo */
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .menu,
 .p-0 {
   padding: 0;

@@ -1,0 +1,16 @@
+/* Declaraciones Globales */
+:root {
+  /* Colores */
+  --main: #e82;
+  --light: #eee;
+  --dark: #333;
+  /* Tamaños */
+  --xs: 60px;
+  --sm: 120px;
+  --md: 240px;
+  --lg: 360px; 
+  --xl: 480px;
+  --xxl: 640px;
+  /* Tipografia */
+    --font: 'Roboto', sans-serif;
+}
