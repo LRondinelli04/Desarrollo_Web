@@ -1,5 +1,15 @@
+/** Seccion Resultado */
+@import url(resultado.css);
+
+/** Seccion de Datos */
+@import url(datos.css);
+
+
+/** Cambios Globales */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
