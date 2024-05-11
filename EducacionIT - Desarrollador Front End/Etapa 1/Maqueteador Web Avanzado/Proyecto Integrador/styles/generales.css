@@ -20,11 +20,25 @@ body {
   width: 100%; /* o algún otro valor relativo */
   max-width: 768px; /* o algún otro valor relativo */
   margin: auto;
-  background-image: radial-gradient(circle at top, #5974ff, white 30%);
+  background-image: radial-gradient(circle at top, #5974ff, white 20%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/*? Imagenes */
+.imagen {
+  width: 380px;
+  height: auto;
+}
+
+/*? Espacios entre los sections */
+section {
+  margin: 50px 0px;
 }
 
 /* Contenido Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (width >= 1440px) {
 }
 
 /* main {

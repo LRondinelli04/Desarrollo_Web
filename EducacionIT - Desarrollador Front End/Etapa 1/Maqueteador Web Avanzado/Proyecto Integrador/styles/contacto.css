@@ -1,4 +1,18 @@
+/*! Modelo Mobile */
+
 #contacto {
+  display: none;
+}
+
+/*! Modelo Desktop */
+@media screen and (width >= 1440px) {
+  #contacto{
+    display: flex;
+    flex-direction: column
+  };
+}
+
+/* #contacto {
   display: flex;
   justify-content: space-between;
   margin: 5% 0%;
@@ -23,3 +37,4 @@
   color: #15163d;
   margin: 5% 0%;
 }
+ */

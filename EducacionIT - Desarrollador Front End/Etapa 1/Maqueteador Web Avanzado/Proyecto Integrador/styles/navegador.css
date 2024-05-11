@@ -13,11 +13,17 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  border: 3px solid black;
 }
 
-  #navegador.activo {
-    padding: 0;
-  }
+#icono{
+  width: 31px;
+  height: auto;
+}
+
+#navegador.activo {
+  padding: 0;
+}
 
 .menu {
   width: 100%;
@@ -30,27 +36,28 @@
   margin-bottom: 1rem;
 }
 
-  .menu.activo {
-    max-height: 100vh;
-    /* espacio entre el menu y el icono IT*/
-    background-color: #ffffff;
-    padding: 20px;
-    list-style: none;
-    width: 100vw;
-  }
+.menu.activo {
+  max-height: 100vh;
+  /* espacio entre el menu y el icono IT*/
+  background-color: #ffffff;
+  padding: 20px;
+  list-style: none;
+  width: 100vw;
+}
 
-  #button-nav.activo {
-    background-color: #ffffff;
-  }
+#button-nav.activo {
+  background-color: #ffffff;
+}
 
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (width >= 1440px) {
   body {
     color: red;
   }
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (798px < width < 1440px) {
   body {
     display: none;
   }
