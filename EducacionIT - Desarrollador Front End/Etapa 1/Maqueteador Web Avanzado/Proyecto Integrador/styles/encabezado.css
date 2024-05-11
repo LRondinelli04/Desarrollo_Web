@@ -1,13 +1,13 @@
 /*! Cambios generales*/
 /** Boton de contacto */
-.boton{
+.boton {
   background-color: #04146c;
   width: 200px;
   padding: 8px 10px;
   border-radius: 8px;
 }
 
-.boton a{
+.boton a {
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -17,7 +17,7 @@
 }
 /*! Version Mobile */
 
-#encabezado{
+#encabezado {
   border: 3px solid black;
   text-align: center;
   margin-top: 3rem;
@@ -27,50 +27,54 @@
 }
 
 /*? Info  */
-#info{
+#info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-  /*? Titulo */
-  #titulo{
-    width: 382px;
-    height: 120px;
-    top: 172px;
-    left: 22px;
-  }
-  #titulo h1{
-    font-size: 40px;
-    font-weight: 700;
-    color: #15163d;
-    line-height: 40px;
-  }
+/*? Titulo */
+#titulo {
+  width: 382px;
+  height: 120px;
+  top: 172px;
+  left: 22px;
+}
+#titulo h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #15163d;
+  line-height: 40px;
+}
 
-  /*? subtitulo */
-  #subtitulo{
-    width: 382px;
-    height: 56px;
-    top: 334px;
-    left: 22px;
-    margin: 20px 0;
-  }
+/*? subtitulo */
+#subtitulo {
+  width: 382px;
+  height: 56px;
+  top: 334px;
+  left: 22px;
+  margin: 20px 0;
+}
 
-  #subtitulo p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #15163d;
-    line-height: 27.5px;
-  }
+#subtitulo p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #15163d;
+  line-height: 27.5px;
+}
 
-  /*? Imagen del encabezado */
-  #encabezado img{
-    margin-top: 2rem;
-  }
+/*? Imagen del encabezado */
+#encabezado img {
+  margin-top: 2rem;
+}
 
-
-
+#encabezado div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* #encabezado {
   display: flex;
