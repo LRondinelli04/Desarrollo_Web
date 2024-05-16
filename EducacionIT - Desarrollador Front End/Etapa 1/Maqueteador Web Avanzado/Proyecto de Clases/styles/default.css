@@ -23,5 +23,5 @@
 
 /* Pie de Pagina */
 @import url("footer.css");
-@import url("social.css");
+@import url("social.scss");
 @import url("map.css");
