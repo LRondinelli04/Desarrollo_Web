@@ -1,72 +1,45 @@
-form {
+/* Estilo General */
+form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 540px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #d3d3d3;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 720px;
+  margin: auto;
+  padding: 1rem;
 }
-
-form input,
-form textarea,
-form select {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #d3d3d3;
-  border-radius: 5px;
+.row{
+  flex-direction: row;
 }
-
-textarea {
+/* Estilo Interno */
+label,
+fieldset{
+  margin: .5rem 0 0 0;
+}
+input,
+textarea,
+select{
+  outline: none;
+  border-radius: .25rem;
+  border: .1rem solid;
+  padding: .25rem .5rem;
+  font-size: 1rem;
+}
+textarea{
   resize: vertical;
   min-height: 5rem;
 }
-
-form :focus {
-  border-color: #e82;
-  box-shadow: 0 0 0.25rem #e82, 0 0 0.5rem #eee;
+/* Comportamiento */
+form :focus{
+  border-color: var(--main);
+  box-shadow: 
+      0 0 .25rem var(--main), 
+      0 0 .5rem var(--main) inset;
 }
-
-form #botones {
-  display: flex;
-  justify-content: center;
+form .message::before{
+  content: 'Mantenga el dedo sobre la opcion para seleccion multiple';
 }
-
-form button {
-  padding: 0.5rem 20px;
-  margin: 0 1rem;
-  background-color: #e82;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  transition: 0.4s;
-  background-color: rgb(163, 1, 1);
-}
-
-option::before {
-  content: "📱";
-  padding-right: 5px;
-}
-
-/* Medium Devices */
-@media screen and (min-width: 768px) {
-  option::before {
-    content: "📟";
-  }
-}
-
-/* XXL Devices - Desktops*/
-@media screen and (min-width: 1200px) {
-  option::before {
-    content: "💻";
+/* XXL Devices - Desktop */
+@media screen and (min-width: 1200px){
+  form .message::before{
+      content: 'Pulse la tecla CTRL para seleccionar multiples elementos'
   }
 }

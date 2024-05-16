@@ -1,18 +1,16 @@
-/* Este archivo va a utilizarce como concentrador de archivos
-No voy a poner codigo de estilo */
-
 /* Elementos Externos */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu&family=Montserrat');
 @import url("fonts.css");
+@import url("icons.css");
 
 /* Reglas Generales */
-@import url("general.css");
-@import url("layout.css"); /* Grid */
 @import url("variables.css");
+@import url("general.css");
+@import url("layout.css");
+@import url("box-models.css");
 
 /* Navegacion Principal */
-@import url("navegador.css");
+@import url("navigation.css");
 
 /* Cabecera de Pagina */
 @import url("header.css");
@@ -20,5 +18,10 @@ No voy a poner codigo de estilo */
 /* Contenido Principal */
 @import url("forms.css");
 @import url("sections.css");
+@import url("promos.css");
+@import url("gallery.scss");
+
 /* Pie de Pagina */
 @import url("footer.css");
+@import url("social.css");
+@import url("map.css");

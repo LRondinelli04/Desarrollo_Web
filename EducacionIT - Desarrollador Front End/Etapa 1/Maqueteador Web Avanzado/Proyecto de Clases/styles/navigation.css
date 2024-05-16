@@ -1,0 +1,111 @@
+nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    /* EXPLICACION
+        STICKY: El elemento ocupa su posicion predeterminada, hasta que se cumple una condicion dada por alguno de sus atributos (TOP, RIGHT, BOTTOM, LEFT) haciendo que deje de formar parte del flow, siempre y cuando siga dentro de su contenedor
+    */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: .5rem;
+    background: #e82 linear-gradient(
+        hsl(30,80%,50%), /*HEX: #ee8822 | DEC: rgb(238,136,34)*/
+        hsl(15,50%,30%)  /*HEX: #883322 | DEC: rgb(136,51,34)*/
+    );
+    /* SHORTHAND: color image position/size repeat */
+}
+.menu{
+    position: fixed;
+    /* EXPLICACION
+        FIXED: El elemento deja de formar parte del flow, es decir, que ya no ocupa lugar en el espacio. Se ubica con respecto al viewport (ventana del navegador) y debe tener sus atributos definidos para ser visualizado.
+    */
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    z-index: -1;
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 100%;
+    background: linear-gradient(
+        var(--main),
+        var(--alt)
+    );
+    opacity: .9;
+    transition: all .5s ease;
+    /* SHORTHAND 
+        -PROPERTY: a que atributo le corresponde
+        -DURATION: cuanto dura la transicion
+        -TIMING-FUNCTION: como se lleva a cabo
+        -DELAY: retraso para que se ejecute
+    */
+}
+.menu.active{
+    left: 0;
+}
+/* Menu Principal */
+nav a{
+    display: flex;
+    align-items: center;
+    color: #ddd;
+}
+.menu a.active,
+.menu a:hover{
+    color: #eee;
+    text-shadow: 0 0 .2rem; /* -x+ -y+ blur color */
+}
+/* Iconos del Menu */
+.menu a::before{
+    filter: sepia(90%);
+    transition: all .5s ease-out;
+}
+.menu a.active::before,
+.menu a:hover::before{
+    filter: grayscale(30%);
+}
+nav button::before{
+    font-weight: bold;
+    filter:grayscale(100%);
+}
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px){
+    nav button{
+        display: none;
+    }
+    .menu{
+        position: static;
+        /* EXPLICACION
+            STATIC: Corresponde al valor predeterminado para cualquier elemento de la pagina, su posicion no puede ser cambiada y el elemento ocupa su lugar por defecto.
+         */
+        display: flex;
+        width: auto;
+        max-height: 600px;
+        gap: .5rem;
+        background-image: none;
+    }
+}
+/* XXL Devices - Smart TV */
+@media screen and (min-width: 1400px){
+    nav{
+        padding: .5rem calc(50vw - 660px); /*top right bottom left*/
+    }
+}
+@media print {
+    nav{
+        display: none;
+    }
+}
+
+/* 
+    | size | desde  | hasta  | ejemplo      |
+    |------|--------|--------|--------------|
+    | xs   | 0      | 576px  | smartwatch   |
+    | sm   | 576px  | 768px  | smartphones  | 
+    | md   | 768px  | 992px  | tablets      |
+    | lg   | 992px  | 1200px | netbooks     |
+    | xl   | 1200px | 1400px | desktop      |
+    | xxl  | 1400px |        | Full HD      |
+*/

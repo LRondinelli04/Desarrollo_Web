@@ -1,13 +1,17 @@
-/* En este archivo vamos a decir como son los estilos generales de la pagina */
-
-* {
+/* Selector Universal (Todas las etiquetas) */
+*{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Ubuntu", sans-serif;
-  scroll-behavior: smooth; /*Controla el deslizamiento en la pagina*/
+  /* EXPLICACION:
+      CONTENT-BOX
+          content-width:  width
+          final-width:    width + padding + border
+      BORDER-BOX
+          final-width:    width
+          content-width:  width - padding - border
+  */
+  scroll-behavior: smooth;
+  font-family: var(--font);
 }
-
 /* Reinicio de Estilos */
 body,
 h1,
@@ -15,27 +19,18 @@ h2,
 h3,
 header p,
 .menu,
-.m-0 {
+.m-0{
   margin: 0;
 }
-
-html {
-  /* Quiero sacar el desbordamiento de elementos sobre el eje x, ya que me genera un scroll que no deseo */
-  overflow-x: hidden;
-  width: 100%;
-}
-
 .menu,
-.p-0 {
+.p-0{
   padding: 0;
 }
-
 nav a,
-.social a {
+.social a{
   text-decoration: none;
 }
-
 .menu,
-.list-unstyled {
+.list-unstyled{
   list-style: none;
 }
