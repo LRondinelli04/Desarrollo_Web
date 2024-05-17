@@ -2,16 +2,21 @@
 
 $stock: 10;
 $propieties: 
-    margin          margin,
-    outline         outline,
-    border          border,
-    border-radius   border-radius,
-    padding         padding,
-    width           width,
-    min-height      min-height,
-    bgSize          background-size,
-    font-size       font-size,
-    line-height     line-height,
+    margin                    margin,
+    outline                   outline,
+    border                    border,
+    border-radius             border-radius,
+    padding                   padding,
+    gap                       gap,
+    width                     width,
+    min-height                min-height,
+    bgSize                    background-size,
+    font-size                 font-size,
+    line-height               line-height,
+    animation-duration        animation-duration,
+    animation-delay           animation-delay,
+    time-delay                transition-delay,
+    time-duration             transition-duration,
 ;
 
 @function setSize($prop, $value) {
@@ -19,9 +24,12 @@ $propieties:
         @return $value * .5rem;
     }
 
-    @else if $prop=='border'or $prop=='outline'or $prop=='border-radius' {
-        @return $value * 1px;
-    }
+    @else if $prop=='border'or 
+             $prop=='outline'or 
+             $prop=='border-radius' 
+             {
+                @return $value * 1px;
+             }
 
     @else if $prop=='width'or $prop=='min-height' {
         @return $value * 10vmax;
@@ -38,6 +46,14 @@ $propieties:
     @else if $prop=='line-height'or $prop=='font-size' {
         @return $value * .5rem;
     }
+
+    @else if $prop=='animation-duration'or 
+             $prop=='animation-delay'or    
+             $prop=='time-delay'or 
+             $prop=='time-duration' 
+             {
+                @return $value * .1s;
+             }
 
     @else {
         @return $value * .25rem;
