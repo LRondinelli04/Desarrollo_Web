@@ -1,0 +1,449 @@
+/** Valores para margin **/
+.margin-0 {
+  margin: 0rem;
+}
+
+.margin-1 {
+  margin: 0.25rem;
+}
+
+.margin-2 {
+  margin: 0.5rem;
+}
+
+.margin-3 {
+  margin: 0.75rem;
+}
+
+.margin-4 {
+  margin: 1rem;
+}
+
+.margin-5 {
+  margin: 1.25rem;
+}
+
+.margin-6 {
+  margin: 1.5rem;
+}
+
+.margin-7 {
+  margin: 1.75rem;
+}
+
+.margin-8 {
+  margin: 2rem;
+}
+
+.margin-9 {
+  margin: 2.25rem;
+}
+
+.margin-10 {
+  margin: 2.5rem;
+}
+
+/** Valores para outline **/
+.outline-0 {
+  outline: 0px;
+}
+
+.outline-1 {
+  outline: 1px;
+}
+
+.outline-2 {
+  outline: 2px;
+}
+
+.outline-3 {
+  outline: 3px;
+}
+
+.outline-4 {
+  outline: 4px;
+}
+
+.outline-5 {
+  outline: 5px;
+}
+
+.outline-6 {
+  outline: 6px;
+}
+
+.outline-7 {
+  outline: 7px;
+}
+
+.outline-8 {
+  outline: 8px;
+}
+
+.outline-9 {
+  outline: 9px;
+}
+
+.outline-10 {
+  outline: 10px;
+}
+
+/** Valores para border **/
+.border-0 {
+  border: 0px;
+}
+
+.border-1 {
+  border: 1px;
+}
+
+.border-2 {
+  border: 2px;
+}
+
+.border-3 {
+  border: 3px;
+}
+
+.border-4 {
+  border: 4px;
+}
+
+.border-5 {
+  border: 5px;
+}
+
+.border-6 {
+  border: 6px;
+}
+
+.border-7 {
+  border: 7px;
+}
+
+.border-8 {
+  border: 8px;
+}
+
+.border-9 {
+  border: 9px;
+}
+
+.border-10 {
+  border: 10px;
+}
+
+/** Valores para border-radius **/
+.border-radius-0 {
+  border-radius: 0px;
+}
+
+.border-radius-1 {
+  border-radius: 1px;
+}
+
+.border-radius-2 {
+  border-radius: 2px;
+}
+
+.border-radius-3 {
+  border-radius: 3px;
+}
+
+.border-radius-4 {
+  border-radius: 4px;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.border-radius-6 {
+  border-radius: 6px;
+}
+
+.border-radius-7 {
+  border-radius: 7px;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.border-radius-9 {
+  border-radius: 9px;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+/** Valores para padding **/
+.padding-0 {
+  padding: 0rem;
+}
+
+.padding-1 {
+  padding: 0.25rem;
+}
+
+.padding-2 {
+  padding: 0.5rem;
+}
+
+.padding-3 {
+  padding: 0.75rem;
+}
+
+.padding-4 {
+  padding: 1rem;
+}
+
+.padding-5 {
+  padding: 1.25rem;
+}
+
+.padding-6 {
+  padding: 1.5rem;
+}
+
+.padding-7 {
+  padding: 1.75rem;
+}
+
+.padding-8 {
+  padding: 2rem;
+}
+
+.padding-9 {
+  padding: 2.25rem;
+}
+
+.padding-10 {
+  padding: 2.5rem;
+}
+
+/** Valores para width **/
+.width-0 {
+  width: 0vmax;
+}
+
+.width-1 {
+  width: 10vmax;
+}
+
+.width-2 {
+  width: 20vmax;
+}
+
+.width-3 {
+  width: 30vmax;
+}
+
+.width-4 {
+  width: 40vmax;
+}
+
+.width-5 {
+  width: 50vmax;
+}
+
+.width-6 {
+  width: 60vmax;
+}
+
+.width-7 {
+  width: 70vmax;
+}
+
+.width-8 {
+  width: 80vmax;
+}
+
+.width-9 {
+  width: 90vmax;
+}
+
+.width-10 {
+  width: 100vmax;
+}
+
+/** Valores para min-height **/
+.min-height-0 {
+  min-height: 0vmax;
+}
+
+.min-height-1 {
+  min-height: 10vmax;
+}
+
+.min-height-2 {
+  min-height: 20vmax;
+}
+
+.min-height-3 {
+  min-height: 30vmax;
+}
+
+.min-height-4 {
+  min-height: 40vmax;
+}
+
+.min-height-5 {
+  min-height: 50vmax;
+}
+
+.min-height-6 {
+  min-height: 60vmax;
+}
+
+.min-height-7 {
+  min-height: 70vmax;
+}
+
+.min-height-8 {
+  min-height: 80vmax;
+}
+
+.min-height-9 {
+  min-height: 90vmax;
+}
+
+.min-height-10 {
+  min-height: 100vmax;
+}
+
+/** Valores para bgSize **/
+.bgSize-0 {
+  background-size: 0%;
+}
+
+.bgSize-1 {
+  background-size: 4%;
+}
+
+.bgSize-2 {
+  background-size: 8%;
+}
+
+.bgSize-3 {
+  background-size: 12%;
+}
+
+.bgSize-4 {
+  background-size: 16%;
+}
+
+.bgSize-5 {
+  background-size: 20%;
+}
+
+.bgSize-6 {
+  background-size: 24%;
+}
+
+.bgSize-7 {
+  background-size: 28%;
+}
+
+.bgSize-8 {
+  background-size: 32%;
+}
+
+.bgSize-9 {
+  background-size: 36%;
+}
+
+.bgSize-10 {
+  background-size: 40%;
+}
+
+/** Valores para font-size **/
+.font-size-0 {
+  font-size: 0rem;
+}
+
+.font-size-1 {
+  font-size: 0.5rem;
+}
+
+.font-size-2 {
+  font-size: 1rem;
+}
+
+.font-size-3 {
+  font-size: 1.5rem;
+}
+
+.font-size-4 {
+  font-size: 2rem;
+}
+
+.font-size-5 {
+  font-size: 2.5rem;
+}
+
+.font-size-6 {
+  font-size: 3rem;
+}
+
+.font-size-7 {
+  font-size: 3.5rem;
+}
+
+.font-size-8 {
+  font-size: 4rem;
+}
+
+.font-size-9 {
+  font-size: 4.5rem;
+}
+
+.font-size-10 {
+  font-size: 5rem;
+}
+
+/** Valores para line-height **/
+.line-height-0 {
+  line-height: 0rem;
+}
+
+.line-height-1 {
+  line-height: 0.5rem;
+}
+
+.line-height-2 {
+  line-height: 1rem;
+}
+
+.line-height-3 {
+  line-height: 1.5rem;
+}
+
+.line-height-4 {
+  line-height: 2rem;
+}
+
+.line-height-5 {
+  line-height: 2.5rem;
+}
+
+.line-height-6 {
+  line-height: 3rem;
+}
+
+.line-height-7 {
+  line-height: 3.5rem;
+}
+
+.line-height-8 {
+  line-height: 4rem;
+}
+
+.line-height-9 {
+  line-height: 4.5rem;
+}
+
+.line-height-10 {
+  line-height: 5rem;
+}
