@@ -1,0 +1,56 @@
+$colors: 
+    primry      #448,
+    secondary   #c36,
+    light       #ddd,
+    dark        #333,
+    success     #3c6,
+    warning     #ea3,
+    danger      #c33,
+    info        #36c,
+;
+$propieties: 
+    text        color,
+    bg          background-color,
+    border      border-color,
+    outline     outline-color,
+    line        text-decoration-color,
+    emphasis    text-emphasis-color,
+    column      column-rule-color,
+    input       accent-color,
+    shadow      --shadow,
+    shade       --shade,
+;
+
+$variant:
+    subtle          25%,
+    emphasis        15%,
+    opaque            d,
+    middle            8,
+    transparent       2,
+;
+
+// Funcion para generar colores
+@function setColor($prop, $color, $value){
+    @if $prop == 'subtle' {
+        @return lighten($color, $value);
+    } @else if $prop == 'emphasis' {
+        @return darken($color, $value);
+    } @else {
+        @return #{$color}#{$value};
+    }
+}
+
+// Generar clases de colores para propiedades CSS 
+@each $prop, $attr in $propieties {
+    /*Valores para #{$attr}*/
+    @each $colorName, $colorValue in $colors {
+        .#{$prop}-#{$colorName} {
+            #{$attr}: #{$colorValue};
+            @each $var, $val in $variant {
+                &-#{$var} {
+                    #{$attr}: setColor($var, $colorValue, $val);
+                }
+            }
+        }
+    }
+}
