@@ -73,6 +73,11 @@
         outset
     ;
 
+    $x:
+        left,
+        right
+    ;
+
     //? FlexBox y CSS grid
         $content:
             start,
@@ -143,6 +148,7 @@
         list-style-type:        (list-style-type:       $list   ),
         border-style:           (border-style:          $border ),
         outline-style:          (outline-style:         $border ),
+        text-align:             (text-align:            (left, right, center, justify)),
 
         //? FlexBox y CSS grid
         justify-content:        (justify-content:       $content),
@@ -183,7 +189,7 @@
             @each $prop, $val in $values {
                 /** Valores para #{$prop} **/
                 @each $value in $val {
-                    .#{$prop}#{size}-#{$value} {
+                    .#{$prop}-#{size}-#{$value} {
                         #{$attr}: $value;
                     }
                 }

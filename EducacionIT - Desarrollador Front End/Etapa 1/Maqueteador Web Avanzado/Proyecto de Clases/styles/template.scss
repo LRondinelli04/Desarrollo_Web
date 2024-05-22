@@ -1,3 +1,16 @@
+// Archivos CSS
+@use"variables.css";
+@use"fonts.css";
+@use"icons.css";
+@use"general.css";
+@use"layout.css";
+/* @use"box-model.css";
+@use"social.css";
+@use"gallery.css"; */
+@use"forms.css";
+
+
+// Archivos SCSS
 @use "attributes";
 @use "colors";
 @use "gallery";
