@@ -11,3 +11,22 @@
     opacity: 1;
   }
 }
+@keyframes glow {
+  to {
+    text-shadow: 0 0 0.5rem var(--light);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(30deg) translateY(-1rem);
+  }
+  75% {
+    transform: rotate(-30deg) translateY(-1rem);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

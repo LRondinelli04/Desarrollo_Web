@@ -16,3 +16,34 @@
         opacity: 1; // Se ve mucho
     }
 }
+
+@keyframes glow {
+
+    // Lo voy a asociar cuando haga un hover
+    to {
+        text-shadow: 0 0 .5rem var(--light);
+    }
+}
+
+@keyframes bounce {
+    // Lo voy a asociar cuando haga un hover
+
+    // Que tenga su valore predeterminado
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(30deg)
+        translateY(-1rem);
+    }
+
+    75% {
+        transform: rotate(-30deg)
+        translateY(-1rem);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
