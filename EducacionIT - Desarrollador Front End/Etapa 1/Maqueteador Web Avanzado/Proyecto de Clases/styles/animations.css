@@ -1,0 +1,13 @@
+@keyframes title {
+  from {
+    scale: 1;
+    transform: translateZ(30vh);
+    opacity: 0.1;
+  }
+}
+@keyframes subtitle {
+  to {
+    transform: skewX(-15deg) translateX(0);
+    opacity: 1;
+  }
+}

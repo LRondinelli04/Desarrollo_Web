@@ -12,12 +12,28 @@
   background-size: cover, contain; /* cover contain | width height */
   background-repeat: no-repeat;
   background-attachment: fixed, scroll;
+  /* Perspectiva */
+  perspective: 1rem; 
+  perspective-origin: top center; 
+  overflow: hidden;
 }
 h1{
   font-family: 'Campana';
-  font-size: 3em;
-  line-height: .5;
+  font-size: 5em;
+  line-height: 1;
+  animation: title 3s 1s ease-out; /* name duration timing-function */
+  animation-fill-mode: backwards;
 }
+
+#header p{
+  transform: 
+    translateX(-200vw)
+    skew(45deg);
+  opacity: 0;
+  animation: subtitle 3s ease-out;
+  animation-fill-mode: forwards;
+}
+
 .header{
   padding: 1rem;
   color: #eee;

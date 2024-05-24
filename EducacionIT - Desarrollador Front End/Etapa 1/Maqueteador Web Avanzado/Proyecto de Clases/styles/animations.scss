@@ -1,0 +1,18 @@
+@keyframes title {
+    from {
+        // Tiene que empezar asi
+        scale: 1; // No se achica
+        transform: translateZ(30vh); // Se mueve hacia adelante
+        opacity: .1; // Se ve poco
+    }
+}
+
+@keyframes subtitle {
+    to {
+        // Tiene que terminar asi
+        transform:
+            skewX(-15deg) // Se inclina hacia la izquierda
+            translateX(0); // Se mueve hacia la derecha
+        opacity: 1; // Se ve mucho
+    }
+}

@@ -3,6 +3,7 @@
 @import url("fonts.css");
 @import url("icons.css");
 @import url("colors.scss");
+@import url("animations.css");
 
 /* Reglas Generales */
 @import url("variables.css");
