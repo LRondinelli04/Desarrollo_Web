@@ -1,3 +1,4 @@
+"use strict";
 // Tipos de datos en TypeScript
 /*
 ! String
