@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+#logo-wh {
+  width: 5%;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18pt;
+  color: #04146c;
+  margin-right: 10px;
+}
+
+#titulo,
+.formulario button {
+  font-family: "Roboto Slab", serif;
+}
+
+#titulo {
+  color: #2c00cc;
+}
+
+h2,
+.formulario p {
+  font-size: 23pt;
+  color: #04146c;
+}
+
+#titulo {
+  font-size: 34pt;
+}
+
+h2 {
+  font-size: 23pt;
+}
+
+p b {
+  color: #ff0000;
+}
+
+.texto-formulario,
+form textarea {
+  width: 500px;
+  border: 1px solid #04146c;;
+}
+
+.texto-formulario {
+  height: 50px;
+}
+
+.formulario textarea {
+  height: 100px;
+}
+
+.formulario #email::placeholder {
+  color: #04146c;
+  font-size: 15px;
+}
+
+/* .botones {
+  display: flex;
+  justify-content: space-around;
+} */
+
+#resetear,
+#enviar {
+  font-size: 24pt;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+}
+
+#resetear {
+  background-color: #f98500;
+  margin-right: 10px;
+}
+
+#enviar {
+  background-color: #2c00cc;
+}

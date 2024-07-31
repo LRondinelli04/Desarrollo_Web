@@ -1,0 +1,13 @@
+main {
+  width: 100%;
+  border: 3px solid pink;
+  display: flex;
+  justify-content: space-evenly
+}
+
+main iframe{
+}
+
+#verde {
+  border: 1px solid blue;
+}

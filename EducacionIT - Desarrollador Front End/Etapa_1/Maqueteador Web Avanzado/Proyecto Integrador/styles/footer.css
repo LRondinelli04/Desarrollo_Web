@@ -1,0 +1,32 @@
+footer {
+  background-color: #15163d;
+  color: #ffffff;
+  padding: 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#footer-column {
+  display: flex;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#copy {
+  text-align: center;
+}
+
+#redes p,
+.red,
+#agencia p,
+#agencia a {
+  margin: 30px 0px;
+}
+
+#redes {
+  margin-left: 50px;
+  margin-right: 5%;
+}

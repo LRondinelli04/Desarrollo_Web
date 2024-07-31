@@ -1,0 +1,30 @@
+/* Elementos Externos */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu&family=Montserrat');
+@import url("fonts.css");
+@import url("icons.css");
+@import url("colors.scss");
+@import url("animations.css");
+
+/* Reglas Generales */
+@import url("variables.css");
+@import url("general.css");
+@import url("layout.css");
+@import url("box-models.css");
+
+/* Navegacion Principal */
+@import url("navigation.css");
+
+/* Cabecera de Pagina */
+@import url("header.css");
+
+/* Contenido Principal */
+@import url("forms.css");
+@import url("sections.css");
+@import url("promos.css");
+@import url("gallery.css");
+@import url("bubbles.css");
+
+/* Pie de Pagina */
+@import url("footer.css");
+@import url("social.scss");
+@import url("map.css");

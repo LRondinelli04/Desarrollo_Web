@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+nav.scrolled {
+  opacity: 0.9;
+  background-color: #4a4cda;
+  border-radius: 0 0 10px 10px;
+}
+
+#logo {
+  width: 70px;
+  height: 41px;
+  cursor: pointer;
+}
+
+#navegador {
+  width: 358px;
+  height: 29px;
+}
+
+#navegador ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navegador ul li a {
+  text-decoration: none;
+  color: #15163d;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+
+#navegador ul li a.scrolled {
+  color: #fff;
+}

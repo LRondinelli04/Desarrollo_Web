@@ -1,0 +1,64 @@
+/* Contenido General del Navegador */
+
+#navegacion .menu a {
+  text-decoration: none;
+  color: #15163d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Contenido Mobile */
+
+#navegador {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 3px solid black;
+}
+
+#icono{
+  width: 31px;
+  height: auto;
+}
+
+#navegador.activo {
+  padding: 0;
+}
+
+.menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.menu.activo {
+  max-height: 100vh;
+  /* espacio entre el menu y el icono IT*/
+  background-color: #ffffff;
+  padding: 20px;
+  list-style: none;
+  width: 100vw;
+}
+
+#button-nav.activo {
+  background-color: #ffffff;
+}
+
+/* Desktop */
+@media screen and (width >= 1440px) {
+  body {
+    color: red;
+  }
+}
+
+
+@media screen and (798px < width < 1440px) {
+  body {
+    display: none;
+  }
+}

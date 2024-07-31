@@ -1,0 +1,62 @@
+/* Cambios externos */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Hacer un @font-face de una fuente descargada Coolvetica*/
+
+/* Cambios globales y el card */
+@import url(global.css);
+
+/* Datos */
+#datos {
+  padding: 0.5rem;
+}
+
+#datos h2 {
+  color: #0a2ff1;
+  font-size: 22pt;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+/* Texto */
+#texto {
+  padding: 1.5rem;
+}
+
+#texto p {
+  color: #04146c;
+  font-size: 21pt;
+  font-weight: 300;
+}
+
+/* Etiquetas */
+#etiquetas {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+.identificador {
+  display: flex;
+  max-width: fit-content;
+}
+
+.identificador .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.identificador .a a {
+  text-decoration: none;
+  color: #04146c;
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+.identificador .a a:hover {
+  transition: 0.5s;
+  color: #0a2ff1;
+  font-weight: 900;
+}

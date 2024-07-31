@@ -1,0 +1,25 @@
+/* Modificaciones Externas */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Navegador */
+@import url("nav.css");
+
+/* Header */
+@import url("header.css");
+
+/* Modificaciones Internas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-image: radial-gradient(
+    circle at -221px -324px,
+    #5974ff,
+    white 35%
+  );
+}

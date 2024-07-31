@@ -1,0 +1,212 @@
+//? toda propiedad que tenga valores por defecto
+
+
+//* Variables de utilidad
+
+    // Valores de Display
+        $inline: inline;
+        $block: block;
+        $flex: flex;
+        $grid: grid;
+        $none: none;
+
+    // Valores de Justify y Align
+        $space: space;
+
+    $media:
+        " "     0,
+        -sm     576px,
+        -md     768px,
+        -lg     992px,
+        -xl     1200px,
+        -xxl    1400px
+    ;
+
+
+//* Atributos compartidos
+    $display: 
+        $grid,
+        $inline,
+        #{$inline}-#{$block},
+        $block,
+        $flex,
+        $none,
+        table,
+        row,
+        cell
+    ;
+
+
+    $list:
+    none,
+    disc,
+    circle,
+    square,
+    decimal,
+    decimal-leading-zero,
+    lower-alpha,
+    upper-alpha,
+    lower-roman,
+    upper-roman,
+    lower-greek,
+    lower-latin,
+    upper-latin,
+    armenian,
+    georgian,
+    cjk-ideographic,
+    hiragana,
+    katakana,
+    hiragana-iroha,
+    katakana-iroha
+    ;
+
+    $border:
+        none,
+        hidden,
+        dotted,
+        dashed,
+        solid,
+        double,
+        groove,
+        ridge,
+        inset,
+        outset
+    ;
+
+    $x:
+        left,
+        right
+    ;
+
+    //? FlexBox y CSS grid
+        $content:
+            start,
+            end,
+            center,
+            #{$space}-around,
+            #{$space}-between,
+            #{$space}-evenly,
+            baseline
+        ;
+
+    //? Background
+            $x:
+                left,
+                right
+            ;
+
+            $y:
+                top,
+                bottom
+            ;
+
+        $direction: // $x, $y, center => (left, right), (top, bottom), center
+            join(join($x, $y), center) // (left, right, top, bottom, center)
+        ;
+
+        $blend:
+            normal,
+            multiply,
+            screen,
+            overlay,
+            darken,
+            lighten,
+            color-dodge,
+            color-burn,
+            hard-light,
+            soft-light,
+            difference,
+            exclusion,
+            hue,
+            saturation,
+            color,
+            luminosity
+        ;
+
+    //? Overflow
+        $overflow:
+            visible,
+            hidden,
+            scroll,
+            auto
+        ;
+
+    //? Animaciones y Transiciones
+        $timing:
+            ease,
+            linear,
+            ease-in,
+            ease-out,
+            ease-in-out
+        ;
+
+
+//* Objeto de Propiedades
+    $array:(
+        //! Atributos Generales              Valores
+        display:                (display:               $display),
+        list-style-type:        (list-style-type:       $list   ),
+        border-style:           (border-style:          $border ),
+        outline-style:          (outline-style:         $border ),
+        text-align:             (text-align:            (left, right, center, justify)),
+
+        //? FlexBox y CSS grid
+        justify-content:        (justify-content:       $content),
+        justify-items:          (justify-items:         $content),
+        align-items:            (align-items:           $content),
+        align-content:          (align-content:         $content),
+        flex-wrap:              (flex-wrap:             (wrap, nowrap, wrap-reverse)),
+        flex-direction:         (flex-direction:        (row, column, row-reverse, column-reverse)),
+
+        //? Background
+        background-size:        (background-size:       (cover, contain)),
+        background-position:    (background-position:   $direction),
+        background-attachment:  (background-attachment: (scroll, fixed)),
+        background-repeat:      (background-repeat:     (repeat, repeat-x, repeat-y, no-repeat)),
+        mix-blend-mode:         (mix-blend-mode:        $blend),
+        background-blend-mode:  (background-blend-mode: $blend),
+        object-fit:             (object-fit:            (fill, contain, cover, none, scale-down)),
+
+        //? Posicion
+        position:               (position:              (static, relative, absolute, fixed, sticky)),
+
+        //? Animaciones y Transiciones
+        transition-timing-function: (transition-timing-function: $timing),
+        animation-timing-function:  (animation-timing-function:  $timing),
+
+
+        //? Overflow
+        overflow:               (overflow:              $overflow),
+        overflow-x:             (overflow-x:            $overflow),
+        overflow-y:             (overflow-y:            $overflow),
+        overflow-wrap:          (overflow-wrap:         (normal, break-word)),
+
+    );
+
+//* Iteracion de Propiedades
+    @mixin properties($array, $size){
+        @each $attr, $values in $array {
+            @each $prop, $val in $values {
+                /** Valores para #{$prop} **/
+                @each $value in $val {
+                    .#{$prop}-#{size}-#{$value} {
+                        #{$attr}: $value;
+                    }
+                }
+            }
+        }
+    }
+
+    @mixin media($vname, $vsize) {
+        @if $vsize == 0 {
+            @include properties($array, "")
+        } @else {
+            @media screen and (min-width: $vsize) {
+                @include properties($array, $vname)
+            }
+        }
+    }
+
+    @each $vn, $vs in $media {
+        @include media($vn, $vs) 
+    }
