@@ -2,49 +2,75 @@
 
 ## Como crear un template usando Perplexity
 
-Paso 1: Crear el archivo del template
-Abre tu editor de texto favorito.
-Crea un nuevo archivo y guárdalo con el nombre que desees, por ejemplo, commit-template.txt.
-En el archivo, escribe la estructura que quieres que tenga tu mensaje de commit. Puedes incluir secciones como:
-Título (máximo 50 caracteres)
-Descripción (opcional, máximo 72 caracteres por línea)
-Tipo de cambio (feat, fix, docs, style, refactor, test, chore)
-Referencia a un issue o pull request
-Firma
-Aquí te dejo un ejemplo de cómo podría verse el archivo:
-text
+## Creación del Template de Mensaje de Commit
 
-# Título del commit (máximo 50 caracteres)
+### Paso 1: Crear el archivo del template
 
-# Descripción del commit (opcional, máximo 72 caracteres por línea)
+1. Abre tu terminal o línea de comandos.
+2. Navega hasta el directorio de tu repositorio utilizando el comando cd.
+3. Crea un archivo llamado .gitmessage en la raíz de tu repositorio. Puedes hacerlo con un editor de texto o utilizando el siguiente comando:
+    - `touch .gitmessage`
+4. Abre el archivo .gitmessage en tu editor de texto favorito y define la estructura de tu mensaje de commit. Un ejemplo de template podría ser:
+    - Subject: <tipo>(<ámbito>): <descripción> (máx. 50 caracteres) 
 
-# Línea en blanco
+    Body: 
+    <inserta una descripción detallada de los cambios realizados en el commit> (ajustar a 72 caracteres)
 
-# Tipo de cambio: feat, fix, docs, style, refactor, test, chore
+    Footer: 
+    <inserta cualquier información adicional, como referencias o números de issue>
+Este formato ayuda a mantener la claridad y la consistencia en los mensajes de commit.
 
-# Línea en blanco
+### Paso 2: Configurar Git para usar el template
 
-# Referencia a issue o pull request (opcional)
+1. Aún en la terminal, ejecuta el siguiente comando para establecer la ruta de tu template de mensaje de commit:
+    - `git config --local commit.template .gitmessage` 
+2. Verifica que la configuración se haya establecido correctamente ejecutando:
+    - `git config --local --get-all commit.template`
+Deberías ver la ruta de tu archivo .gitmessage en la salida.
+    
 
-# Línea en blanco
+### Uso de Template en Commits
 
-# Firma
+Una vez que hayas configurado el template, cada vez que realices un commit, Git abrirá automáticamente tu template en el editor de texto predeterminado. Para usarlo:
 
-Guarda el archivo.
-Paso 2: Configurar el template en Git
-Abre una terminal o línea de comandos.
-Navega hasta el directorio donde se encuentra tu proyecto Git.
-Ejecuta el siguiente comando para configurar el template de commit a nivel de repositorio:
-bash
-git config commit.template /ruta/al/archivo/commit-template.txt
+1. Ejecuta el comando para crear un nuevo commit:   
+    - `git commit`
+2. Completa las secciones del template con la información relevante sobre los cambios realizados.
+3. Guarda y cierra el archivo. Git creará el commit utilizando el mensaje que escribiste en el template.
 
-Reemplaza /ruta/al/archivo/commit-template.txt con la ruta absoluta al archivo que creaste en el paso 1.
-Opcionalmente, puedes configurar el template a nivel global para que se aplique a todos tus proyectos Git:
-bash
-git config --global commit.template /ruta/al/archivo/commit-template.txt
+### Beneficios de Usar un Template de Mensaje de Commit
 
-Paso 3: Probar el template
-Ejecuta el comando git commit en tu terminal.
-Git abrirá tu editor de texto predeterminado con el template precargado.
-Completa los campos necesarios y guarda el archivo.
-Git creará el commit con el mensaje formateado según tu template.
+- **Consistencia**: Ayuda a todos los miembros del equipo a seguir un formato uniforme.
+- **Claridad**: Facilita la comprensión de los cambios realizados en cada commit.
+- **Mejora en la colaboración**: Los mensajes claros y estructurados son esenciales para la revisión de código y la resolución de problemas en equipo.
+
+Al implementar un template personalizado para tus mensajes de commit, no solo mejorarás la calidad de la documentación de tu código, sino que también facilitarás la colaboración con otros desarrolladores en tu proyecto.
+
+## Ejemplos de Template
+
+### Ejemplo 1: Template Básico
+
+    Título: Resumen en modo imperativo, comienza con mayúscula, no termina con un punto
+    (máx. 50 caracteres)
+
+    Cuerpo: Explica *qué* y *por qué* (no *cómo*). Incluye el ID de la tarea (ej. Jira).
+    Ajusta a 72 caracteres.
+    
+    Pie: 
+    Incluye Co-authored-by para todos los colaboradores.
+    Formato:
+    Co-authored-by: nombre <usuario@ejemplo.com>
+
+### Ejemplo 2: Template con Detalles Adicionales
+
+Título: Resumen breve (50 caracteres máx)
+
+Cuerpo:
+- Descripción de los cambios realizados.
+- Razones de los cambios.
+- Referencias a tickets o issues relevantes.
+
+Pie:
+- Información adicional, como autores o notas sobre cambios importantes.
+- Ejemplo:
+Co-authored-by: Juan Pérez <juan@ejemplo.com>
