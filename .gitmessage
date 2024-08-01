@@ -1,0 +1,10 @@
+# Título: Resumen en modo imperativo, comienza con mayúscula, no termina con un punto
+# (máx. 50 caracteres)
+
+# Cuerpo: Explica *qué* y *por qué* (no *cómo*). Incluye el ID de la tarea (ej. Jira).
+# Ajusta a 72 caracteres.
+
+# Pie: 
+# Incluye Co-authored-by para todos los colaboradores.
+# Formato:
+# Co-authored-by: nombre <usuario@ejemplo.com>
