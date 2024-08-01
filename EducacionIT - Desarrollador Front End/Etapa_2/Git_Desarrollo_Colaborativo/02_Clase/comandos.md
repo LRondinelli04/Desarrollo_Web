@@ -63,14 +63,14 @@ Al implementar un template personalizado para tus mensajes de commit, no solo me
 
 ### Ejemplo 2: Template con Detalles Adicionales
 
-Título: Resumen breve (50 caracteres máx)
+    Título: Resumen breve (50 caracteres máx)
 
-Cuerpo:
-- Descripción de los cambios realizados.
-- Razones de los cambios.
-- Referencias a tickets o issues relevantes.
+    Cuerpo:
+        - Descripción de los cambios realizados.
+        - Razones de los cambios.
+        - Referencias a tickets o issues relevantes.
 
-Pie:
-- Información adicional, como autores o notas sobre cambios importantes.
-- Ejemplo:
-Co-authored-by: Lucas Rondinelli <lucas@ejemplo.com>
+    Pie:
+        - Información adicional, como autores o notas sobre cambios importantes.
+        - Ejemplo:
+    Co-authored-by: Lucas Rondinelli <lucas@ejemplo.com>
