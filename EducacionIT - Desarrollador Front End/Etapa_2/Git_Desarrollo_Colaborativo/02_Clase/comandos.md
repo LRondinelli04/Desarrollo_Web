@@ -73,4 +73,4 @@ Cuerpo:
 Pie:
 - Información adicional, como autores o notas sobre cambios importantes.
 - Ejemplo:
-Co-authored-by: Juan Pérez <juan@ejemplo.com>
+Co-authored-by: Lucas Rondinelli <lucas@ejemplo.com>
