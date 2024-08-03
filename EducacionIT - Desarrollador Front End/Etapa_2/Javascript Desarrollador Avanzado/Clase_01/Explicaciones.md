@@ -6,6 +6,7 @@ Detalles del funcionamiento:
 - Descarga en segundo plano: El script se descarga mientras el navegador continúa procesando el HTML.
 - Ejecución después del análisis del DOM: El script se ejecuta solo después de que el navegador haya terminado de construir el DOM.
 - Ejemplo:
+    ```html
     <!DOCTYPE html>
     <html lang="es">
     <head>
@@ -17,5 +18,6 @@ Detalles del funcionamiento:
         <h1>Hola, mundo!</h1>
     </body>
     </html>
+    ```
 
 En este ejemplo, el navegador descargará js/index.js en segundo plano y lo ejecutará después de que el DOM esté completamente construido. Esto asegura que el contenido de la página se cargue y se muestre al usuario sin demoras causadas por la ejecución del script.
