@@ -21,3 +21,9 @@ Detalles del funcionamiento:
     ```
 
 En este ejemplo, el navegador descargará js/index.js en segundo plano y lo ejecutará después de que el DOM esté completamente construido. Esto asegura que el contenido de la página se cargue y se muestre al usuario sin demoras causadas por la ejecución del script.
+
+------------------------------------------------------
+La utilizacion de \n en un console.log se utiliza para un salto de linea.
+
+- Ejemeplo: 
+    - console.log("\n/* ES6 - Template literals */");
