@@ -9,7 +9,7 @@ Ejemplo : DOCS( Apps.txt ) : Agregamos una nueva linea de comandos.
 # Agregamos una breve descripcion de lo que hicimos.
 Descripción: 
 
-# ----------
+----------
 
 # Tickets
 ## Estructura del ticket :
@@ -17,13 +17,13 @@ Descripción:
 
 
 
-#-----------
+-----------
 
 # Responsable o creador.
 # Toda la informacion necesaria.
 Co-authored-by: nombre <usuario@gmail.com>
 
-# ----------
+----------
 * Problema :
   # Agregar descripion en forma de lista.
   - 
