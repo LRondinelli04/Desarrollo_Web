@@ -74,3 +74,39 @@ Al implementar un template personalizado para tus mensajes de commit, no solo me
         - Información adicional, como autores o notas sobre cambios importantes.
         - Ejemplo:
     Co-authored-by: Lucas Rondinelli <lucas@ejemplo.com>
+
+### Ejemplo 3: Template Completo
+
+    Titulo del commit:
+    ## Estructura del titulo :
+    ## Tipo + ( Archivos ) : Descripcion de los sucedido, de forma imperativa y hasta 50 caracteres.
+    Archivo : DOCS( Apps.txt ) : Agregamos una nueva linea de comandos.
+    ### Agregar titulo a continuacion
+
+
+    # Subtitulo
+    # Agregamos una breve descripcion de lo que hicimos.
+    Descripción: 
+
+    ----------
+
+    # Tickets
+    ## Estructura del ticket :
+    ## Ticketera + Nro. de ticket y tipo de ticket (Bug, Task, etc.) : Descripcion de los sucedido, de forma imperativa y hasta 50 caracteres.
+
+
+
+    -----------
+
+    # Responsable o creador.
+    # Toda la informacion necesaria.
+    Co-authored-by: nombre <usuario@gmail.com>
+
+    ----------
+    * Problema :
+      # Agregar descripion en forma de lista.
+      - 
+
+    * Solucion :
+      # Agregar descripion en forma de lista.
+      -
