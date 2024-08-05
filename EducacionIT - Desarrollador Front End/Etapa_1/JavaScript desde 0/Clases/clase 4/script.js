@@ -1,3 +1,4 @@
+// Constante de Caja
 const caja = document.getElementById("caja");
 
 // Declaramos funciones de control
