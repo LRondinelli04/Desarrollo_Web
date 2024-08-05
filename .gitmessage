@@ -1,7 +1,7 @@
 Titulo del commit
 ## Estructura del titulo :
 ## Tipo + ( Archivos ) : Descripcion de los sucedido, de forma imperativa y hasta 50 caracteres.
-Ejemplo : DOCS( Apps.txt ) : Agregamos una nueva linea de comandos.
+Archivo : DOCS( Apps.txt ) : Agregamos una nueva linea de comandos.
 ### Agregar titulo a continuacion
 
 
