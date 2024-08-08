@@ -2,12 +2,12 @@
 
 ## Descripción
 
-Este repositorio contiene archivos y códigos desarrollados durante cursos y a lo largo de la pasantía realizada en colaboración con la Fiscalía de Estado y la Facultad de Informática - UNLP. Acá se encuentran ejemplos prácticos y proyectos que reflejan los conocimientos adquiridos en diversas tecnologías.
+Este repositorio contiene archivos y códigos desarrollados durante cursos y prácticas implementadas mediante la Facultad de Informática - UNLP. Acá se encuentran ejemplos prácticos y proyectos que reflejan los conocimientos adquiridos en diversas tecnologías.
 
 ## Lenguajes y Tecnologías
 
-- *HTML, CSS (incluyendo SCSS)*
-- *JavaScript*
-- *Java*
-- *Angular (TypeScript)*
-- *Java*
+- _HTML, CSS (incluyendo SCSS)_
+- _JavaScript_
+- _Java_
+- _Angular (TypeScript)_
+- _Java_
