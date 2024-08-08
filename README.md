@@ -10,9 +10,4 @@ Este repositorio contiene archivos y códigos desarrollados durante cursos y a l
 - *JavaScript*
 - *Java*
 - *Angular (TypeScript)*
-<<<<<<< HEAD
 - *Java*
-=======
-- *Java*
-- *PHP*
->>>>>>> 9348255a355372e5f27b54a5ec811f6a906ca962
