@@ -9,5 +9,3 @@ Este repositorio contiene archivos y c√≥digos desarrollados durante cursos y pr√
 - _HTML, CSS (incluyendo SCSS)_
 - _JavaScript_
 - _Java_
-- _Angular (TypeScript)_
-- _Java_
