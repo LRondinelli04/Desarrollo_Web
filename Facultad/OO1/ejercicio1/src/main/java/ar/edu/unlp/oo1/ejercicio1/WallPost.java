@@ -13,7 +13,7 @@ public interface WallPost {
 	 * Setea el texto descriptivo de la publicación
 	 * @param text
 	 */
-	public void setText(String text);
+	void setText(String text);
 	
 	/**
 	 * Retorna la cantidad de “me gusta”
@@ -43,6 +43,5 @@ public interface WallPost {
 	 * Cambia el post del estado destacado a no destacado y viceversa
 	 */
 	void toggleFeatured();
-
 	
 }
