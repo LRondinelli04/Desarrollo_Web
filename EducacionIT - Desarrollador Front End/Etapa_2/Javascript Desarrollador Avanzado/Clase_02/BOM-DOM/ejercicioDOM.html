@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Acceso avanzado del JS al DOM</title>
+    <style>
+        .azul {
+            background-color: cyan;
+            color: purple;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="titulo">JS Av. Clase 2</h1>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <script>
+        /* ---------------------------------- */
+        /*  Acceso al h1 (Elemento de título) */
+        /* ---------------------------------- */
+        const titulo = document.querySelector('h1')
+        //titulo.innerText = 'Título creado desde JS'
+        //titulo.innerText = 'Título creado desde <a href="#">JS</a>'
+        titulo.innerHTML = 'Título creado desde <a href="#">JS</a>'
+        console.log(titulo.innerText)
+        console.log(titulo.innerHTML)
+
+        titulo.classList.add('azul')
+        titulo.classList.remove('azul')
+
+        titulo.id = 'titulo'
+        console.log(titulo.id)
+
+        /* ----------------------------------- */
+        /*  Acceso a la lista desordenada (ul) */
+        /* ----------------------------------- */
+        const items = document.querySelectorAll('li')
+        console.log(items)
+
+        const colores = ['red','blue','green','#ff8000','rgb(255,0,255)']
+
+        for(let i=0; i<items.length; i++) {
+            items[i].innerHTML = `Elemento Nro. ${i+1}`
+            items[i].style.color = colores[i]
+            items[i].style.backgroundColor = i%2 == 0? '#222' : '#111'
+        }
+
+        /* ------------------------------------ */
+        /*  Creación de un elemento de párrafo  */
+        /* ------------------------------------ */
+        const parrafo = document.createElement('p')
+
+        parrafo.innerText = 'Hola soy un párrafo'
+        parrafo.style.color = 'yellow'
+        
+        document.body.appendChild(parrafo)
+
+        parrafo.style.backgroundColor = '#000'
+        parrafo.style.padding = '5px'
+        parrafo.style.borderRadius = '10px'
+        parrafo.id = 'parrafo'
+        parrafo.classList.add('txt')
+
+
+        /* ------------------------------------ */
+        /*     Acceso al elemento de título     */
+        /* ------------------------------------ */
+        console.log( document.querySelector('title').innerText )
+        console.log( document.getElementsByTagName('title')[0].innerText )
+        console.log( document.getElementsByTagName('title')[0].textContent )
+
+        document.querySelector('title').innerText = 'Título Cambiado!'
+
+    </script>
+
+</body>
+</html>
