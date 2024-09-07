@@ -1,3 +1,9 @@
+function ajax(url, metodo = "get") {
+  const xhr = new XMLHttpRequest();
+  xhr.open(metodo, url);
+  xhr.send();
+}
+
 function getNombreArchivo(id) {
   return `plantillas/${id}.html`;
 }
@@ -5,7 +11,19 @@ function getNombreArchivo(id) {
 /* Configurar los click del nav */
 
 function getPlantillas() {
+  const main = document.querySelectorAll("main");
+  /* Carga de la pagina de inicio */
+  const archivo = getNombreArchivo("home");
+  const xhr = ajax(archivo);
+  xhr.addEventListener("load", () => {
+    if (xhr.response == 200) {
+      const plantilla = xhr.response;
+      main.innerHTML = plantilla;
+    }
+  });
+
   const links = document.querySelectorAll("a");
+  /* Carga dinamica de las vistas de navegacion */
 
   links.forEach((link) => {
     link.addEventListener("click", (e) => {
@@ -16,22 +34,31 @@ function getPlantillas() {
 
       // Hacer la peticion por AJAX
       const archivo = getNombreArchivo(id);
-      console.log(archivo);
-    });
+      console.warn(archivo);
 
-    /* link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const url = e.target.href;
-        const urlArray = url.split("/");
-        const page = urlArray[urlArray.length - 1];
-        console.log(page);
-        fetchPage(page);
-      }); */
+      const xhr = ajax(archivo);
+      xhr.addEventListener("load", () => {
+        if (xhr.status == 200) {
+          const plantilla = xhr.response;
+          main.innerHTML = plantilla;
+        }
+      });
+    });
   });
 }
 
 function start() {
-  getPlantillas();
+  /* carga de la barra de navegacion */
+  const archivo = getNombreArchivo("navbar");
+  const xhr = ajax(archivo);
+  xhr.addEventListener("load", () => {
+    if (xhr.status == 200) {
+      const plantilla = xhr.response;
+      header.innerHTML = plantilla;
+
+      getPlantillas();
+    }
+  });
 }
 
 start();
