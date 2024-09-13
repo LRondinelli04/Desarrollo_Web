@@ -1,4 +1,4 @@
-# Desarrollo de Software y Web
+# Desarrollo Web
 
 ## Descripción
 
