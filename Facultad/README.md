@@ -6,10 +6,11 @@ Esta carpeta contiene todos los archivos de prácticas y prácticas de parciales
 
 ## Lenguajes y Tecnologías
 
-- ***Java***: Utilizado en diversas materias como _Taller de Programación_ y _Orientación a Objetos 1 (OO1)_, se emplea principalmente para enseñar los principios de la programación orientada a objetos. Los entornos de desarrollo integrados (IDE) utilizados son **NetBeans, Eclipse y VSCode**..
+- ### Java
+    Utilizado en diversas materias como _Taller de Programación_ y _Orientación a Objetos 1 (OO1)_, se emplea principalmente para enseñar los principios de la programación orientada a objetos. Los entornos de desarrollo integrados (IDE) utilizados son **NetBeans, Eclipse y VSCode**..
 
 ## Estructura del Repositorio
 
-- ***Orientación a Objetos 1 (OO1)***
+- ### Orientación a Objetos 1 (OO1)
     - **Parciales/**: Prácticas de parciales y exámenes.
     - **Practicas/**: Ejercicios y proyectos realizados durante las clases prácticas.
