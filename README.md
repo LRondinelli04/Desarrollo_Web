@@ -1,11 +1,20 @@
-# Desarrollo de Software y Web
+# Desarrollo Web
 
 ## Descripción
 
-Este repositorio alberga archivos y códigos desarrollados durante cursos y prácticas implementadas tanto en la Facultad de Informática - UNLP como en otras plataformas de educación en línea como EducacionIT. Aquí encontrarás ejemplos prácticos y proyectos que reflejan los conocimientos adquiridos en diversas tecnologías de desarrollo de software y web. El objetivo es proporcionar una colección de proyectos que demuestren habilidades y técnicas aprendidas en distintos contextos educativos.
+Este repositorio alberga archivos y códigos desarrollados durante los cursos de la carrera de Desarrollador Front End ofrecida por EducacionIT. Aquí encontrarás ejemplos prácticos y proyectos que reflejan los conocimientos adquiridos en diversas tecnologías de desarrollo web. El objetivo es proporcionar una colección de proyectos que demuestren habilidades y técnicas aprendidas a lo largo de la carrera.
 
 ## Lenguajes y Tecnologías
 
-- _HTML, CSS (incluyendo SCSS)_
-- _JavaScript_
-- _Java_
+- ### HTML y CSS (incluyendo SCSS)
+    Utilizados para la estructura y el diseño de las interfaces de usuario en los proyectos web.
+
+- ### JavaScript
+    Lenguaje de programación utilizado para añadir interactividad a las páginas web y desarrollar aplicaciones web dinámicas.
+
+- ### Java
+    Lenguaje de programación orientado a objetos utilizado para desarrollar aplicaciones robustas y escalables.
+
+## Estructura del Repositorio
+
+- **EducacionIT - Desarrollador Front End/**: Esta carpeta contiene los materiales y proyectos desarrollados durante los cursos de la carrera de Desarrollador Front End ofrecida por EducacionIT.
