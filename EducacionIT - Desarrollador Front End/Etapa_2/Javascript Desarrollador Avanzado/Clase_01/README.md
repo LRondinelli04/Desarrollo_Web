@@ -1,4 +1,6 @@
-# Explicaciones de la clase utiles
+# EXPLICACIONES
+
+# Clase 01
 
 El atributo **defer** en la etiqueta <script> indica al navegador que debe descargar el script en segundo plano y ejecutarlo una vez que el documento HTML haya sido completamente analizado y construido (es decir, cuando el DOM esté listo). Esto es útil para mejorar el rendimiento de la página y evitar bloqueos durante la carga del contenido.
 
