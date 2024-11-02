@@ -1,0 +1,5 @@
+console.log( new window.App() )
+console.log( new window.App() )
+console.log( new window.App() )
+console.log( new window.App() )
+console.log( new window.App() )
