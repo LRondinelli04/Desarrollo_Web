@@ -1,0 +1,36 @@
+/* -------------------------------------- */
+/*           BABEL TRANSPILER             */
+/* -------------------------------------- */
+url: https://babeljs.io/
+
+instalación:
+    1) npm i babel-cli babel-preset-env
+    2) Creamos un archivo de configuración .babelrc
+
+ejecución: (desde scripts en package.json)
+    "scripts": {
+        ...
+        "transpilar": "babel index.ES6.js -o index.JS5.js -w",
+        "run-transpilado": "nodemon index.JS5.js --ignore index.ES6.js"        
+    },
+
+    --> npm run transpilar (en una consola)
+    --> npm run run-transpilado (en otra consola)
+
+
+/* -------------------------------------- */
+/*            WEBPACK BUNDLER             */
+/* -------------------------------------- */    
+url: https://webpack.js.org/
+
+instalación: npm i webpack@4.44.1 webpack-cli@3.3.12
+
+ejecución: (desde scripts en package.json)
+    "scripts": {
+        ...
+        "empaquetar": "set NODE_OPTIONS=--openssl-legacy-provider && webpack index1.js index2.js index3.js -o index.min.js --mode 'production' -w",
+        "run-empaquetado": "nodemon index.min.js"
+    }
+
+    --> npm run empaquetar (en una consola)
+    --> npm run run-empaquetado (en otra consola)

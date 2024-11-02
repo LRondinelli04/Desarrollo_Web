@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ES6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpilar": "babel index.ES6.js -o index.JS5.js -w",
+    "run-transpilado": "nodemon index.JS5.js --ignore index.ES6.js",
+    "empaquetar": "set NODE_OPTIONS=--openssl-legacy-provider && webpack index1.js index2.js index3.js -o index.min.js --mode 'production' -w",
+    "run-empaquetado": "nodemon index.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
