@@ -1,5 +1,11 @@
 # Desarrollo Web
 
+<div align="center"> 
+  
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/LRondinelli04/Licenciatura-en-Sistemas_APU)](https://github.com/LRondinelli04/Licenciatura-en-Sistemas_APU)
+
+</div> 
+
 ## Descripción
 
 Este repositorio alberga archivos y códigos desarrollados durante los cursos de la carrera de Desarrollador Front End ofrecida por EducacionIT. Aquí encontrarás ejemplos prácticos y proyectos que reflejan los conocimientos adquiridos en diversas tecnologías de desarrollo web. El objetivo es proporcionar una colección de proyectos que demuestren habilidades y técnicas aprendidas a lo largo de la carrera.
