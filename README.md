@@ -1,6 +1,6 @@
-# Desarrollo Web
-
 <div align="center"> 
+
+# Desarrollo Web
   
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/LRondinelli04/Desarrollo_Web)](https://github.com/LRondinelli04/Desarrollo_Web)
 
